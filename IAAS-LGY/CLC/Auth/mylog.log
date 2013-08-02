@@ -1,0 +1,11 @@
+2013-07-26 20:12:55,232: [INFO]  : begin parse config file.
+2013-07-26 20:12:55,232: [INFO]  : parse config file success.
+2013-07-26 20:12:55,232: [INFO]  : system is running on port 7000
+2013-07-26 20:30:27,131: [INFO]  : receive a connection from 192.168.100.11
+2013-07-26 21:21:22,287: [INFO]  : receive a connection from 192.168.100.11
+2013-07-26 21:21:24,330: [INFO]  : receive a connection from 192.168.100.11
+2013-07-26 21:59:48,435: [INFO]  : receive a connection from 192.168.100.11
+2013-07-26 22:00:32,834: [INFO]  : receive a connection from 192.168.100.11
+2013-07-26 22:07:15,269: [INFO]  : receive a connection from 192.168.100.11
+2013-07-26 22:12:54,471: [INFO]  : receive a connection from 192.168.100.11
+2013-07-26 22:13:53,968: [INFO]  : receive a connection from 192.168.100.11

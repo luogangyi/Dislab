@@ -1,0 +1,65 @@
+import java.util.*;
+import java.io.*;
+import java.net.*;
+
+public class User {
+	public String username;
+	public String passwd;
+	public String server_ip = "localhost";
+	public int server_port = 10015;
+	
+	
+	public void sendInfo()
+	{
+		InetSocketAddress addr;
+		BufferedReader is = null;
+		PrintWriter os = null;
+		Socket sock;
+		try{
+			addr = new InetSocketAddress(Inet4Address.getByName(server_ip),server_port); //创建socket
+			sock = new Socket();  
+			sock.connect(addr);//连接服务器
+			
+
+		
+
+			os = new PrintWriter(sock.getOutputStream()); //管道的写工具
+			is = new BufferedReader(new InputStreamReader(sock.getInputStream()));  //管道的读工具
+
+			//BufferedReader user = new BufferedReader(new InputStreamReader(System.in)); //从控制台读取命令的工具
+			
+			//System.out.print("client say:");
+			//String msg = user.readLine();
+
+			os.println("LOGIN:USERNAME=test1,PASSWORD=123456".getBytes());
+			os.flush();
+			String echo = is.readLine();
+			System.out.println(echo);
+//			while(!msg .equals("bye"))
+//			{
+//
+//				os.println(msg);
+//				os.flush();
+//				
+//				String echo = is.readLine();
+//				System.out.println(echo);
+//				
+//				System.out.print("client say:");
+//				msg = user.readLine();
+//			}	
+			os.close();
+			is.close();
+			sock.close();
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		User user = new User();
+		user.sendInfo();
+	}
+
+}

@@ -1,0 +1,127 @@
+2013/07/26 20:04:07 Friday [ERROR] Init Process error
+2013/07/26 20:05:41 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:05:41 Friday [INFO] receive the command size:[B@6
+2013/07/26 20:05:41 Friday [WARN] receive a cmd receive cmd .,but the user not login,close the connection.
+2013/07/28 01:36:51 Sunday [INFO] receive a connection from 127.0.0.1.
+2013/07/28 01:36:51 Sunday [INFO] receive the command size:0030
+2013/07/28 01:36:51 Sunday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/28 01:36:51 Sunday [INFO] begin Login::Do().
+2013/07/28 01:36:51 Sunday [INFO] begin process parameter.
+2013/07/28 01:36:51 Sunday [INFO] end process parameter.
+2013/07/28 01:36:51 Sunday [INFO] begin to send login request to auth server.
+2013/07/28 01:36:51 Sunday [INFO] send login request to auth server success.
+2013/07/28 01:36:51 Sunday [INFO] begin to read auth server ack.
+2013/07/28 01:36:51 Sunday [INFO] read auth server ack success.
+2013/07/28 01:36:51 Sunday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/28 01:36:51 Sunday [INFO] receive the command size:0015
+2013/07/28 01:36:51 Sunday [INFO] receive cmd START VM:VMID=1.
+2013/07/28 01:36:51 Sunday [INFO] begin StartVM::Do().
+2013/07/28 01:36:51 Sunday [INFO] begin process parameter.
+2013/07/28 01:36:51 Sunday [INFO] end process parameter.
+2013/07/28 01:36:51 Sunday [INFO] execute: select id from VMDetail where id=1.
+2013/07/28 01:36:51 Sunday [INFO] execute: select id from VMDetail where status=1 and id=1.
+2013/07/28 01:36:51 Sunday [INFO] recv ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11 from dispatch server.
+2013/07/28 01:36:51 Sunday [INFO] recv ack message:ACK:START VM:RETN=1002,DESC=mount NFS error from nc vm server.
+2013/07/28 01:36:51 Sunday [ERROR] start vm 1 failed .
+2013/07/28 01:36:51 Sunday [INFO] send ack message:ACK:START VM:RETN=1002,DESC=mount NFS error
+2013/07/28 01:36:52 Sunday [INFO] receive the command size:
+2013/07/28 01:36:52 Sunday [INFO] clinet close the connection.
+2013/07/28 02:02:59 Sunday [INFO] receive a connection from 127.0.0.1.
+2013/07/28 02:02:59 Sunday [INFO] receive the command size:0030
+2013/07/28 02:02:59 Sunday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/28 02:02:59 Sunday [INFO] begin Login::Do().
+2013/07/28 02:02:59 Sunday [INFO] begin process parameter.
+2013/07/28 02:02:59 Sunday [INFO] end process parameter.
+2013/07/28 02:02:59 Sunday [INFO] begin to send login request to auth server.
+2013/07/28 02:02:59 Sunday [INFO] send login request to auth server success.
+2013/07/28 02:02:59 Sunday [INFO] begin to read auth server ack.
+2013/07/28 02:02:59 Sunday [INFO] read auth server ack success.
+2013/07/28 02:02:59 Sunday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/28 02:02:59 Sunday [INFO] receive the command size:0015
+2013/07/28 02:02:59 Sunday [INFO] receive cmd START VM:VMID=1.
+2013/07/28 02:02:59 Sunday [INFO] begin StartVM::Do().
+2013/07/28 02:02:59 Sunday [INFO] begin process parameter.
+2013/07/28 02:02:59 Sunday [INFO] end process parameter.
+2013/07/28 02:02:59 Sunday [INFO] execute: select id from VMDetail where id=1.
+2013/07/28 02:02:59 Sunday [INFO] execute: select id from VMDetail where status=1 and id=1.
+2013/07/28 02:02:59 Sunday [INFO] recv ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11 from dispatch server.
+2013/07/28 02:03:00 Sunday [INFO] recv ack message:ACK:START VM:RETN=1002,DESC=start vm failed from nc vm server.
+2013/07/28 02:03:00 Sunday [ERROR] start vm 1 failed .
+2013/07/28 02:03:00 Sunday [INFO] send ack message:ACK:START VM:RETN=1002,DESC=start vm failed
+2013/07/28 02:03:00 Sunday [INFO] receive the command size:
+2013/07/28 02:03:00 Sunday [INFO] clinet close the connection.
+2013/07/28 02:16:56 Sunday [INFO] receive a connection from 127.0.0.1.
+2013/07/28 02:16:56 Sunday [INFO] receive the command size:0030
+2013/07/28 02:16:56 Sunday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/28 02:16:56 Sunday [INFO] begin Login::Do().
+2013/07/28 02:16:56 Sunday [INFO] begin process parameter.
+2013/07/28 02:16:56 Sunday [INFO] end process parameter.
+2013/07/28 02:16:56 Sunday [INFO] begin to send login request to auth server.
+2013/07/28 02:16:56 Sunday [INFO] send login request to auth server success.
+2013/07/28 02:16:56 Sunday [INFO] begin to read auth server ack.
+2013/07/28 02:16:56 Sunday [INFO] read auth server ack success.
+2013/07/28 02:16:56 Sunday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/28 02:16:56 Sunday [INFO] receive the command size:0015
+2013/07/28 02:16:56 Sunday [INFO] receive cmd START VM:VMID=1.
+2013/07/28 02:16:56 Sunday [INFO] begin StartVM::Do().
+2013/07/28 02:16:56 Sunday [INFO] begin process parameter.
+2013/07/28 02:16:56 Sunday [INFO] end process parameter.
+2013/07/28 02:16:56 Sunday [INFO] execute: select id from VMDetail where id=1.
+2013/07/28 02:16:56 Sunday [INFO] execute: select id from VMDetail where status=1 and id=1.
+2013/07/28 02:16:56 Sunday [INFO] recv ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11 from dispatch server.
+2013/07/28 02:16:56 Sunday [INFO] recv ack message:ACK:START VM:RETN=1002,DESC=start vm failed from nc vm server.
+2013/07/28 02:16:56 Sunday [ERROR] start vm 1 failed .
+2013/07/28 02:16:56 Sunday [INFO] send ack message:ACK:START VM:RETN=1002,DESC=start vm failed
+2013/07/28 02:16:56 Sunday [INFO] receive the command size:
+2013/07/28 02:16:56 Sunday [INFO] clinet close the connection.
+2013/07/28 02:29:07 Sunday [INFO] receive a connection from 127.0.0.1.
+2013/07/28 02:29:07 Sunday [INFO] receive the command size:0030
+2013/07/28 02:29:07 Sunday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/28 02:29:07 Sunday [INFO] begin Login::Do().
+2013/07/28 02:29:07 Sunday [INFO] begin process parameter.
+2013/07/28 02:29:07 Sunday [INFO] end process parameter.
+2013/07/28 02:29:07 Sunday [INFO] begin to send login request to auth server.
+2013/07/28 02:29:07 Sunday [INFO] send login request to auth server success.
+2013/07/28 02:29:07 Sunday [INFO] begin to read auth server ack.
+2013/07/28 02:29:07 Sunday [INFO] read auth server ack success.
+2013/07/28 02:29:07 Sunday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/28 02:29:07 Sunday [INFO] receive the command size:0015
+2013/07/28 02:29:07 Sunday [INFO] receive cmd START VM:VMID=1.
+2013/07/28 02:29:07 Sunday [INFO] begin StartVM::Do().
+2013/07/28 02:29:07 Sunday [INFO] begin process parameter.
+2013/07/28 02:29:07 Sunday [INFO] end process parameter.
+2013/07/28 02:29:07 Sunday [INFO] execute: select id from VMDetail where id=1.
+2013/07/28 02:29:07 Sunday [INFO] execute: select id from VMDetail where status=1 and id=1.
+2013/07/28 02:29:07 Sunday [INFO] recv ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11 from dispatch server.
+2013/07/28 02:29:08 Sunday [INFO] recv ack message:ACK:START VM:RETN=1002,DESC=start vm failed from nc vm server.
+2013/07/28 02:29:08 Sunday [ERROR] start vm 1 failed .
+2013/07/28 02:29:08 Sunday [INFO] send ack message:ACK:START VM:RETN=1002,DESC=start vm failed
+2013/07/28 02:29:08 Sunday [INFO] receive the command size:
+2013/07/28 02:29:08 Sunday [INFO] clinet close the connection.
+2013/07/28 02:31:02 Sunday [INFO] receive a connection from 127.0.0.1.
+2013/07/28 02:31:02 Sunday [INFO] receive the command size:0030
+2013/07/28 02:31:02 Sunday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/28 02:31:02 Sunday [INFO] begin Login::Do().
+2013/07/28 02:31:02 Sunday [INFO] begin process parameter.
+2013/07/28 02:31:02 Sunday [INFO] end process parameter.
+2013/07/28 02:31:02 Sunday [INFO] begin to send login request to auth server.
+2013/07/28 02:31:02 Sunday [INFO] send login request to auth server success.
+2013/07/28 02:31:02 Sunday [INFO] begin to read auth server ack.
+2013/07/28 02:31:02 Sunday [INFO] read auth server ack success.
+2013/07/28 02:31:02 Sunday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/28 02:31:02 Sunday [INFO] receive the command size:0015
+2013/07/28 02:31:02 Sunday [INFO] receive cmd START VM:VMID=1.
+2013/07/28 02:31:02 Sunday [INFO] begin StartVM::Do().
+2013/07/28 02:31:02 Sunday [INFO] begin process parameter.
+2013/07/28 02:31:02 Sunday [INFO] end process parameter.
+2013/07/28 02:31:02 Sunday [INFO] execute: select id from VMDetail where id=1.
+2013/07/28 02:31:02 Sunday [INFO] execute: select id from VMDetail where status=1 and id=1.
+2013/07/28 02:31:02 Sunday [INFO] recv ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11 from dispatch server.
+2013/07/28 02:31:02 Sunday [INFO] recv ack message:ACK:START VM:RETN=0,DESC=success from nc vm server.
+2013/07/28 02:31:02 Sunday [INFO] execute: update VMDetail set status=1,host=192.168.101.11 where id=1.
+2013/07/28 02:31:02 Sunday [INFO] execute: update VMDetail set status=1,host=192.168.101.11 where id=1.
+2013/07/28 02:31:02 Sunday [ERROR] update vm status to VMDetail table failed.
+2013/07/28 02:31:02 Sunday [INFO] end StartVM::Do().
+2013/07/28 02:31:02 Sunday [INFO] send ack message:ACK:START VM:RETN=0,DESC=success
+2013/07/28 02:31:02 Sunday [INFO] receive the command size:
+2013/07/28 02:31:02 Sunday [INFO] clinet close the connection.

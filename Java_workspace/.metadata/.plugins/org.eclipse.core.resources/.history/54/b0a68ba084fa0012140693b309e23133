@@ -1,0 +1,326 @@
+import java.sql.*;
+import java.util.*;
+import java.util.Date;
+import java.util.regex.*;
+import java.io.*;
+
+public class TrafficMonitor {
+
+	public static String interface_monitor = "br0";
+	public static String localIP;
+    // MySQL配置时的用户名
+    private static String user = "root"; 
+    private static String configFilename = "nccfg.cfg";
+    // MySQL配置时的密码
+    private static String password = "123456";
+	private Connection conn;
+
+	
+	public TrafficMonitor()
+	{
+		conn = getMysqlConn();
+	}
+	public static boolean setLocalIP()
+	{
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(configFilename)));
+			String line = null;
+			while((line = br.readLine())!=null)
+			{
+				if(line.contains("NCLocalIP"))
+					localIP = line.substring(line.indexOf('=')+1);
+			}
+			if(line!=null)
+			{
+				System.out.println("Local IP :"+line);
+				return true;
+			}
+			return false;
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+		}
+	}
+	//获取MySQL连接
+	public Connection getMysqlConn()
+	{
+        // 驱动程序名
+        String driver = "com.mysql.jdbc.Driver";
+
+        // URL指向要访问的数据库名scutcs
+        String url = "jdbc:mysql://127.0.0.1:3306/cloud";
+
+        try { 
+         // 加载驱动程序
+         Class.forName(driver);
+
+         // 连续数据库
+         Connection conn = DriverManager.getConnection(url, user, password);
+         return conn;
+        }
+        catch(Exception e)
+        {
+        	e.printStackTrace();
+        	return null;
+        }
+	}
+	
+	public List<Integer> getLocalVMIP(String localIP)
+	{
+		String sql="select ID from VMDetail where Host = '"+localIP + "'";
+		List<Integer> id_list = new LinkedList<Integer>();
+		try{
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            String name = null;
+            int id;
+            while(rs.next()) {
+    
+             // 选择sname这列数据
+             name = rs.getString("ID");
+             id = Integer.parseInt(name);
+             id_list.add(id);
+             System.out.println("VM(id) on local"+localIP+" :" +name);
+            }
+            return id_list;
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return null;
+		}
+	}
+	/**
+	 * 根据VMID获取VM所属的GroupID
+	 * 根据GroupID获取所属的所有VMID
+	 */
+	public List<Integer> getGruopPartnerID(int vmid)
+	{
+		
+		
+		String sql="select GroupID from VMDetail where ID = "+vmid + "";
+		List<Integer> id_list = new LinkedList<Integer>();
+		try{
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            String GruopID = null;
+            int group_id;
+            if(rs.next())
+            {
+            	GruopID = rs.getString("GroupID");
+                group_id = Integer.parseInt(GruopID);
+                System.out.println("Group ID on local"+group_id);
+            }
+            else
+            {
+            	System.out.println("Error VMID!");
+            	return null;
+            }
+
+            
+    		sql="select ID from VMDetail where GroupID = "+group_id ;
+            // statement用来执行SQL语句
+            statement = conn.createStatement();
+            rs = statement.executeQuery(sql);
+            String name = null;
+            int id;
+            while(rs.next()) {
+    
+             // 选择sname这列数据
+             name = rs.getString("ID");
+             id = Integer.parseInt(name);
+             id_list.add(id);
+             System.out.println(group_id+" has parter VM(id) :"+id);
+            }
+            return id_list;
+		
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	/**
+	 * 生成产生监控traffic命令的脚本
+	 * 返回监控结果所保存的文件名list
+	 * @param ip_arr
+	 * @return
+	 */
+	public List<String>  GenerateMonitorCMD(String [] ip_arr)
+	{
+		//String ip = "192.168.100.71";
+		List<String> fileNameList = new LinkedList<String>();
+		try{
+			File file = new File("start_monitor.sh");
+			FileOutputStream fos = new FileOutputStream(file);
+			OutputStreamWriter osw = new OutputStreamWriter(fos,"UTF-8");
+			BufferedWriter bw = new BufferedWriter(osw);
+			Date date = new Date();
+			bw.write("#!bin/sh");
+			bw.newLine();
+			bw.write("#written by lgy!");
+			bw.newLine();
+			for(String ip:ip_arr)
+			{
+				String outputFileName = "traffic_"+ip+"_"+date+".txt";
+				fileNameList.add(ip);
+				String cmdString="/usr/sbin/tcpdump host "+ ip +" -i "+interface_monitor+" >"+outputFileName;
+				bw.write(cmdString);
+				bw.newLine();
+				bw.flush();
+			}
+			bw.close();
+			return fileNameList;
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return null;
+		}
+
+	}
+	
+	public String getIPfromID(int id)
+	{
+		String sql="select IP from MACIP where VMID = "+id;
+		List<Integer> id_list = new LinkedList<Integer>();
+		try{
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            String IP = null;
+            int group_id;
+            if(rs.next())
+            {
+            	IP = rs.getString("IP");
+                System.out.println("VM(id) : "+id +", IP:"+IP);
+                return IP;
+            }
+            else
+            {
+            	System.out.println("Error VMID!");
+            	return null;
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return null;
+		}
+	}
+	public static void test()
+	{
+		String s1= "192.168.100.71";
+		String s2=s1.replaceAll("\\.", "\\\\.");
+		System.out.println(s2);
+		System.out.println("192\\.168\\.100\\.71");
+	}
+	/**
+	 * 根据ip查询group中其他VM的IP
+	 */
+	public String[] queryPartner(String ip)
+	{
+		String [] ip_arr = {"192.168.100.71","192.168.101.81"};
+		return ip_arr;
+	}
+	
+	public void processData(String fileName,String m_ip)
+	{
+		String[] ip_arr = queryPartner(m_ip);
+		Long[] data_arr = new Long[ip_arr.length]; 
+		Pattern[] pattern_arr = new Pattern[ip_arr.length];
+		
+		String regex_ip = m_ip.replaceAll("\\.", "\\\\.");
+		
+		for(int i=0;i < ip_arr.length;i++)
+		{
+			ip_arr[i] = ip_arr[i].replaceAll("\\.", "\\\\.");
+			//System.out.println(ip_arr[i]);
+
+			String regex = "(("+ip_arr[i]+")|("+regex_ip+"))\\s+>"
+					+ "\\s+(("+ip_arr[i]+")|("+regex_ip+")).*length\\s+(\\d+)";
+			pattern_arr[i] = Pattern.compile(regex);
+		}
+		
+		
+		//System.out.println(m_ip);
+
+		for(int i = 0;i <data_arr.length; i++)
+		{
+			data_arr[i] = 0L ;
+		}
+		try{
+			String line;
+			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
+			while((line = br.readLine())!=null)
+			{
+				for(int i = 0;i<data_arr.length;i++)
+				{
+
+					Matcher m = pattern_arr[i].matcher(line);
+					if(m.find())
+					{
+						data_arr[i] += Long.parseLong(m.group(7));
+					}
+					
+				}
+
+			}
+		}
+		catch(Exception e)
+		{
+			
+		}
+		for(int i = 0;i <data_arr.length; i++)
+		{
+			System.out.println(data_arr[i]);
+		}
+		
+		
+	}
+	public static int TCPDumpCMD()
+	{
+		
+	    try
+	    {
+	    
+	      String[] cmd = new String[2];
+	      cmd[0] = "sh";
+	      cmd[1] = "start_monitor.sh";
+
+	      Process p = Runtime.getRuntime().exec(cmd);
+	      Thread.sleep(60000);
+	      cmd[0] = "sh";
+	      cmd[1] = "stop_monitor.sh";
+
+	      Runtime.getRuntime().exec(cmd);
+	    }
+
+	    catch (Exception ioe)
+	    {
+	    	ioe.printStackTrace();
+	    	System.out.println(
+	        "An error occured while getting node information ("
+	          + ioe.getMessage()
+	          + ")");
+	    }
+		return 0;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//TCPDumpCMD("192.168.100.71","br0");
+		//TrafficMonitor tm = new TrafficMonitor();
+		//tm.GenerateMonitorCMD();
+		//TCPDumpCMD();
+		setLocalIP();
+		TrafficMonitor tm = new TrafficMonitor();
+		tm.processData("traffic_192.168.100.71.txt","115.239.210.26");
+		tm.getLocalVMIP("192.168.100.11");
+		tm.getGruopPartnerID(1);
+		//test();
+	}
+
+}

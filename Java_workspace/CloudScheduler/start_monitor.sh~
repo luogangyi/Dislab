@@ -1,0 +1,4 @@
+#!bin/sh
+#written by lgy!
+ls -al
+/usr/sbin/tcpdump host 192.168.100.71 -i br0 >traffic_192.168.100.71.txt &

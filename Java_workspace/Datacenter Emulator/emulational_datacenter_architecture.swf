@@ -1,0 +1,50 @@
+; Partition:  1  0     (Itanium2 1.5GHz,  8 nodes,   8 CPUs)
+; Partition:  2  1     (Opteron  2.2GHz, 16 nodes,  16 CPUs)
+; Partition:  3  2     (Xeon     3.2GHz, 10 nodes,  10 CPUs)
+; Partition:  4  3     (Opteron  2.6GHz,  5 nodes,  80 CPUs)
+; Partition:  5  4     (AthlonMP 1.6GHz, 16 nodes,  32 CPUs)
+; Partition:  6  5     (Xeon     2.4GHz, 32 nodes,  64 CPUs)
+; Partition:  7  6     (Xeon     2.7GHz, 36 nodes, 148 CPUs)
+; Partition:  8  7     (Xeon     3.1GHz, 35 nodes,  70 CPUs)
+; Partition:  9  8     (Opteron  1.6GHz, 10 nodes,  20 CPUs)
+; Partition: 10  9     (Opteron  2.4GHz,  3 nodes,   6 CPUs)
+; Partition: 11  10    (Opteron  2.0GHz, 23 nodes,  92 CPUs)
+; Partition: 12  11    (Xeon     3.0GHz, 19 nodes, 152 CPUs)
+; Partition: 13  12    (Xeon     2.7GHz,  8 nodes,  64 CPUs)
+; Partition: 14  13    (Xeon     2.3GHz, 11 nodes,  44 CPUs)
+;group_id	rack_amount	server_amount	cpu_frequency	cpu_amount	memory_amount
+0		6		15		1.5GHz		8		16
+1		8		10		2.4GHz		8		16
+2		8		10		2.4GHz		12		32
+3		8		12		2.8GHz		24		96
+4		6		10		2.8GHz		24		64
+5		8		10		3.2GHz		24		96
+6		5		15		2.8GHz		24		48
+7		8		10		3.0GHz		16		32
+8		8		12		2.8GHz		36		96
+9		5		15		2.8GHz		24		96
+10		8		15		2.8GHz		36		96
+11		8		12		2.8GHz		24		48
+12		5		15		3.2GHz		24		96
+13		6		15		3.2GHz		48		128
+14		8		12		2.4GHz		24		96
+15		8		12		2.8GHz		24		64
+16		8		15		2.8GHz		36		96
+17		8		12		2.8GHz		24		48
+18		5		15		3.2GHz		24		96
+19		8		12		2.8GHz		24		48
+20		5		15		3.2GHz		24		96
+;Group:  1  0     (Itanium2 1.5GHz,  8 nodes,   8 CPUs)
+;Group:  2  1     (Opteron  2.2GHz, 16 nodes,  16 CPUs)
+;Group:  3  2     (Xeon     3.2GHz, 10 nodes,  10 CPUs)
+;Group:  4  3     (Opteron  2.6GHz,  5 nodes,  80 CPUs)
+;Group:  5  4     (AthlonMP 1.6GHz, 16 nodes,  32 CPUs)
+;Group:  6  5     (Xeon     2.4GHz, 32 nodes,  64 CPUs)
+;Group:  7  6     (Xeon     2.7GHz, 36 nodes, 148 CPUs)
+;Group:  8  7     (Xeon     3.1GHz, 35 nodes,  70 CPUs)
+;Group:  9  8     (Opteron  1.6GHz, 10 nodes,  20 CPUs)
+;Group: 10  9     (Opteron  2.4GHz,  3 nodes,   6 CPUs)
+;Group: 11  10    (Opteron  2.0GHz, 23 nodes,  92 CPUs)
+;Group: 12  11    (Xeon     3.0GHz, 19 nodes, 152 CPUs)
+;Group: 13  12    (Xeon     2.7GHz,  8 nodes,  64 CPUs)
+;Group: 14  13    (Xeon     2.3GHz, 11 nodes,  44 CPUs)

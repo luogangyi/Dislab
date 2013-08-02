@@ -1,0 +1,190 @@
+2013/07/26 20:30:30 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:30:30 Friday [INFO] receive the command size:[B@4
+2013/07/26 20:30:30 Friday [WARN] receive a cmd receive cmd .,but the user not login,close the connection.
+2013/07/26 20:52:08 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:52:08 Friday [INFO] receive the command size:[B@6
+2013/07/26 20:52:08 Friday [WARN] receive a cmd receive cmd .,but the user not login,close the connection.
+2013/07/26 20:53:26 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:53:26 Friday [INFO] receive the command size:[B@5
+2013/07/26 20:53:26 Friday [WARN] receive a cmd receive cmd .,but the user not login,close the connection.
+2013/07/26 20:54:12 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:54:12 Friday [INFO] receive the command size:[B@6
+2013/07/26 20:54:12 Friday [WARN] receive a cmd receive cmd .,but the user not login,close the connection.
+2013/07/26 20:54:53 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:54:53 Friday [INFO] receive the command size:[B@7
+2013/07/26 20:54:53 Friday [WARN] receive a cmd receive cmd .,but the user not login,close the connection.
+2013/07/26 20:56:24 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:56:24 Friday [INFO] receive the command size:[B@6
+2013/07/26 20:56:25 Friday [WARN] receive a cmd receive cmd .,but the user not login,close the connection.
+2013/07/26 20:57:56 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 20:57:56 Friday [INFO] receive the command size:6300
+2013/07/26 20:58:00 Friday [ERROR] recv more than 4S, close the socket.
+2013/07/26 21:02:50 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:02:50 Friday [INFO] receive the command size:
+2013/07/26 21:02:50 Friday [INFO] clinet close the connection.
+2013/07/26 21:03:29 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:03:29 Friday [INFO] receive the command size:0036
+2013/07/26 21:03:29 Friday [INFO] receive cmd LOGIN:USERNAME=test1,PASSWORD=123456.
+2013/07/26 21:03:29 Friday [INFO] begin Login::Do().
+2013/07/26 21:03:29 Friday [INFO] begin process parameter.
+2013/07/26 21:03:29 Friday [INFO] send ack message:ACK:LOGIN:RETN=4,DESC=Wrong Parameter
+2013/07/26 21:09:22 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:09:22 Friday [INFO] receive the command size:0032
+2013/07/26 21:09:22 Friday [INFO] receive cmd LOGIN:USER=test1,PASSWORD=123456.
+2013/07/26 21:09:22 Friday [INFO] begin Login::Do().
+2013/07/26 21:09:22 Friday [INFO] begin process parameter.
+2013/07/26 21:09:22 Friday [INFO] send ack message:ACK:LOGIN:RETN=4,DESC=Wrong Parameter
+2013/07/26 21:20:58 Friday [ERROR] bind to port error
+2013/07/26 21:20:58 Friday [ERROR] Init Process error
+2013/07/26 21:21:32 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:21:32 Friday [INFO] receive the command size:0036
+2013/07/26 21:21:32 Friday [INFO] receive cmd LOGIN:USERNAME=test1,PASSWORD=123456.
+2013/07/26 21:21:32 Friday [INFO] begin Login::Do().
+2013/07/26 21:21:32 Friday [INFO] begin process parameter.
+2013/07/26 21:21:32 Friday [INFO] send ack message:ACK:LOGIN:RETN=4,DESC=Wrong Parameter
+2013/07/26 21:22:22 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:22:22 Friday [INFO] receive the command size:0030
+2013/07/26 21:22:22 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 21:22:22 Friday [INFO] begin Login::Do().
+2013/07/26 21:22:22 Friday [INFO] begin process parameter.
+2013/07/26 21:22:22 Friday [INFO] end process parameter.
+2013/07/26 21:22:22 Friday [INFO] begin to send login request to auth server.
+2013/07/26 21:22:22 Friday [INFO] send login request to auth server success.
+2013/07/26 21:22:22 Friday [INFO] begin to read auth server ack.
+2013/07/26 21:22:23 Friday [INFO] read auth server ack success.
+2013/07/26 21:22:23 Friday [INFO] send ack message:ACK:LOGIN:RETN=1001,DESC=user name or pass is error
+2013/07/26 21:31:34 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:31:34 Friday [INFO] receive the command size:0030
+2013/07/26 21:31:34 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 21:31:34 Friday [INFO] begin Login::Do().
+2013/07/26 21:31:34 Friday [INFO] begin process parameter.
+2013/07/26 21:31:34 Friday [INFO] end process parameter.
+2013/07/26 21:31:34 Friday [INFO] begin to send login request to auth server.
+2013/07/26 21:31:34 Friday [INFO] send login request to auth server success.
+2013/07/26 21:31:34 Friday [INFO] begin to read auth server ack.
+2013/07/26 21:31:34 Friday [INFO] read auth server ack success.
+2013/07/26 21:31:34 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 21:32:00 Friday [INFO] receive the command size:
+2013/07/26 21:32:00 Friday [INFO] clinet close the connection.
+2013/07/26 21:32:13 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:32:13 Friday [INFO] receive the command size:0030
+2013/07/26 21:32:13 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 21:32:13 Friday [INFO] begin Login::Do().
+2013/07/26 21:32:13 Friday [INFO] begin process parameter.
+2013/07/26 21:32:13 Friday [INFO] end process parameter.
+2013/07/26 21:32:13 Friday [INFO] begin to send login request to auth server.
+2013/07/26 21:32:13 Friday [INFO] send login request to auth server success.
+2013/07/26 21:32:13 Friday [INFO] begin to read auth server ack.
+2013/07/26 21:32:13 Friday [INFO] read auth server ack success.
+2013/07/26 21:32:13 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 21:48:43 Friday [INFO] receive the command size:
+2013/07/26 21:48:43 Friday [INFO] clinet close the connection.
+2013/07/26 21:56:25 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 21:56:25 Friday [INFO] receive the command size:0030
+2013/07/26 21:56:25 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 21:56:25 Friday [INFO] begin Login::Do().
+2013/07/26 21:56:25 Friday [INFO] begin process parameter.
+2013/07/26 21:56:25 Friday [INFO] end process parameter.
+2013/07/26 21:56:25 Friday [INFO] begin to send login request to auth server.
+2013/07/26 21:56:25 Friday [INFO] send login request to auth server success.
+2013/07/26 21:56:25 Friday [INFO] begin to read auth server ack.
+2013/07/26 21:56:25 Friday [INFO] read auth server ack success.
+2013/07/26 21:56:25 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 21:59:36 Friday [ERROR] bind to port error
+2013/07/26 21:59:36 Friday [ERROR] Init Process error
+2013/07/26 22:00:41 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 22:00:41 Friday [INFO] receive the command size:0030
+2013/07/26 22:00:41 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 22:00:41 Friday [INFO] begin Login::Do().
+2013/07/26 22:00:41 Friday [INFO] begin process parameter.
+2013/07/26 22:00:41 Friday [INFO] end process parameter.
+2013/07/26 22:00:41 Friday [INFO] begin to send login request to auth server.
+2013/07/26 22:00:41 Friday [INFO] send login request to auth server success.
+2013/07/26 22:00:41 Friday [INFO] begin to read auth server ack.
+2013/07/26 22:00:41 Friday [INFO] read auth server ack success.
+2013/07/26 22:00:41 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 22:07:20 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 22:07:20 Friday [INFO] receive the command size:0030
+2013/07/26 22:07:20 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 22:07:20 Friday [INFO] begin Login::Do().
+2013/07/26 22:07:20 Friday [INFO] begin process parameter.
+2013/07/26 22:07:20 Friday [INFO] end process parameter.
+2013/07/26 22:07:20 Friday [INFO] begin to send login request to auth server.
+2013/07/26 22:07:20 Friday [INFO] send login request to auth server success.
+2013/07/26 22:07:20 Friday [INFO] begin to read auth server ack.
+2013/07/26 22:07:20 Friday [INFO] read auth server ack success.
+2013/07/26 22:07:20 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 22:12:59 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 22:12:59 Friday [INFO] receive the command size:0030
+2013/07/26 22:12:59 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 22:12:59 Friday [INFO] begin Login::Do().
+2013/07/26 22:12:59 Friday [INFO] begin process parameter.
+2013/07/26 22:12:59 Friday [INFO] end process parameter.
+2013/07/26 22:12:59 Friday [INFO] begin to send login request to auth server.
+2013/07/26 22:12:59 Friday [INFO] send login request to auth server success.
+2013/07/26 22:12:59 Friday [INFO] begin to read auth server ack.
+2013/07/26 22:12:59 Friday [INFO] read auth server ack success.
+2013/07/26 22:12:59 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 22:13:12 Friday [INFO] receive the command size:
+2013/07/26 22:13:12 Friday [INFO] clinet close the connection.
+2013/07/26 22:13:59 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 22:13:59 Friday [INFO] receive the command size:0030
+2013/07/26 22:13:59 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 22:13:59 Friday [INFO] begin Login::Do().
+2013/07/26 22:13:59 Friday [INFO] begin process parameter.
+2013/07/26 22:13:59 Friday [INFO] end process parameter.
+2013/07/26 22:13:59 Friday [INFO] begin to send login request to auth server.
+2013/07/26 22:13:59 Friday [INFO] send login request to auth server success.
+2013/07/26 22:13:59 Friday [INFO] begin to read auth server ack.
+2013/07/26 22:13:59 Friday [INFO] read auth server ack success.
+2013/07/26 22:13:59 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 22:29:15 Friday [INFO] receive the command size:
+2013/07/26 22:29:15 Friday [INFO] clinet close the connection.
+2013/07/26 22:36:57 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 22:36:57 Friday [INFO] receive the command size:0030
+2013/07/26 22:36:57 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 22:36:57 Friday [INFO] begin Login::Do().
+2013/07/26 22:36:57 Friday [INFO] begin process parameter.
+2013/07/26 22:36:57 Friday [INFO] end process parameter.
+2013/07/26 22:36:57 Friday [INFO] begin to send login request to auth server.
+2013/07/26 22:36:57 Friday [INFO] send login request to auth server success.
+2013/07/26 22:36:57 Friday [INFO] begin to read auth server ack.
+2013/07/26 22:36:57 Friday [INFO] read auth server ack success.
+2013/07/26 22:36:57 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 22:36:57 Friday [INFO] receive the command size:
+2013/07/26 22:36:57 Friday [INFO] clinet close the connection.
+2013/07/26 22:38:12 Friday [INFO] receive a connection from 127.0.0.1.
+2013/07/26 22:38:12 Friday [INFO] receive the command size:0030
+2013/07/26 22:38:12 Friday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/26 22:38:12 Friday [INFO] begin Login::Do().
+2013/07/26 22:38:12 Friday [INFO] begin process parameter.
+2013/07/26 22:38:12 Friday [INFO] end process parameter.
+2013/07/26 22:38:12 Friday [INFO] begin to send login request to auth server.
+2013/07/26 22:38:12 Friday [INFO] send login request to auth server success.
+2013/07/26 22:38:12 Friday [INFO] begin to read auth server ack.
+2013/07/26 22:38:12 Friday [INFO] read auth server ack success.
+2013/07/26 22:38:12 Friday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/26 22:38:12 Friday [INFO] receive the command size:
+2013/07/26 22:38:12 Friday [INFO] clinet close the connection.
+2013/07/28 01:30:40 Sunday [INFO] receive a connection from 127.0.0.1.
+2013/07/28 01:30:40 Sunday [INFO] receive the command size:0030
+2013/07/28 01:30:40 Sunday [INFO] receive cmd LOGIN:user=test1,passwd=123456.
+2013/07/28 01:30:40 Sunday [INFO] begin Login::Do().
+2013/07/28 01:30:40 Sunday [INFO] begin process parameter.
+2013/07/28 01:30:40 Sunday [INFO] end process parameter.
+2013/07/28 01:30:40 Sunday [INFO] begin to send login request to auth server.
+2013/07/28 01:30:40 Sunday [INFO] send login request to auth server success.
+2013/07/28 01:30:40 Sunday [INFO] begin to read auth server ack.
+2013/07/28 01:30:40 Sunday [INFO] read auth server ack success.
+2013/07/28 01:30:40 Sunday [INFO] Process::sendAck send ack message:ACK:LOGIN:RETN=0,DESC=success
+2013/07/28 01:30:40 Sunday [INFO] receive the command size:0015
+2013/07/28 01:30:40 Sunday [INFO] receive cmd START VM:VMID=1.
+2013/07/28 01:30:40 Sunday [INFO] begin StartVM::Do().
+2013/07/28 01:30:40 Sunday [INFO] begin process parameter.
+2013/07/28 01:30:40 Sunday [INFO] end process parameter.
+2013/07/28 01:30:40 Sunday [INFO] execute: select id from VMDetail where id=1.
+2013/07/28 01:30:40 Sunday [INFO] execute: select id from VMDetail where status=1 and id=1.
+2013/07/28 01:30:40 Sunday [ERROR] connect dispatch server error.
+2013/07/28 01:30:40 Sunday [INFO] send ack message:ACK:START VM:RETN=8,DESC=system is busy,please wait
+2013/07/28 01:30:40 Sunday [INFO] receive the command size:
+2013/07/28 01:30:40 Sunday [INFO] clinet close the connection.

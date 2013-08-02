@@ -1,0 +1,40 @@
+import java.util.*;
+import java.io.*;
+
+public class TrafficMoniter {
+
+	public static int TCPDumpCMD(String moniter_ip, String net_intf)
+	{
+		
+	    try
+	    {
+	    
+	      String[] cmd = new String[3];
+	      cmd[0] = "tcpdump";
+//	      cmd[1] = "host "+moniter_ip;
+//	      cmd[2] = "-i "+net_intf;
+	      //cmd[3] = nodeInfoProgram;
+	      Process p = Runtime.getRuntime().exec(cmd);
+	      BufferedReader read =
+	        new BufferedReader(new InputStreamReader(p.getInputStream()));
+	      String msg;
+	      while ((msg = read.readLine()) != null) {
+	    	  System.out.println(msg + "<br>");
+	      }
+	      read.close();
+	    }
+	    catch (Exception ioe)
+	    {
+	      System.out.println(
+	        "An error occured while getting node information ("
+	          + ioe.getMessage()
+	          + ")");
+	    }
+		return 0;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TCPDumpCMD("192.168.100.71","br0");
+	}
+
+}

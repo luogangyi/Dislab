@@ -1,0 +1,57 @@
+import java.util.*;
+import java.io.*;
+import java.net.*;
+
+public class User {
+	public String username;
+	public String passwd;
+	public String server_ip = "localhost";
+	public int server_port = 10015;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InetSocketAddress addr;
+		BufferedReader is = null;
+		PrintWriter os = null;
+		try{
+			addr = new InetSocketAddress(new Inet4Address(server_ip),server_port); //创建socket
+			Socket sock = new Socket();  
+			sock.connect(addr);//连接服务器
+			
+
+		
+
+			os = new PrintWriter(sock.getOutputStream()); //管道的写工具
+			is = new BufferedReader(new InputStreamReader(sock.getInputStream()));  //管道的读工具
+
+			BufferedReader user = new BufferedReader(new InputStreamReader(System.in)); //从控制台读取命令的工具
+			
+			System.out.print("client say:");
+			String msg = user.readLine();
+
+			while(!msg .equals("bye"))
+			{
+
+				os.println(msg);
+				os.flush();
+				
+				String echo = is.readLine();
+				System.out.println(echo);
+				
+				System.out.print("client say:");
+				msg = user.readLine();
+			}	
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}finally
+		{
+			os.close();
+			is.close();
+			sock.close();	
+		}
+
+	}
+
+}

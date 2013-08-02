@@ -1,0 +1,682 @@
+23:04:26.648209 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1782, length 64
+23:04:26.648248 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1782, length 64
+23:04:26.648781 IP 192.168.100.11.43627 > c.center-dns.jsinfo.net.domain: 59300+ PTR? 11.100.168.192.in-addr.arpa. (45)
+23:04:26.660087 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.43627: 59300 NXDomain* 0/1/0 (80)
+23:04:26.660252 IP 192.168.100.11.38022 > c.center-dns.jsinfo.net.domain: 3560+ PTR? 71.100.168.192.in-addr.arpa. (45)
+23:04:26.670440 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.38022: 3560 NXDomain* 0/1/0 (80)
+23:04:26.670617 IP 192.168.100.11.38996 > c.center-dns.jsinfo.net.domain: 4822+ PTR? 1.7.177.61.in-addr.arpa. (41)
+23:04:26.681656 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.38996: 4822 1/2/2 PTR c.center-dns.jsinfo.net. (153)
+23:04:27.225364 IP 192.168.100.11.38206 > hg-in-f91.1e100.net.https: Flags [S], seq 2670776608, win 14600, options [mss 1460,sackOK,TS val 173920536 ecr 0,nop,wscale 7], length 0
+23:04:27.225543 IP 192.168.100.11.57366 > c.center-dns.jsinfo.net.domain: 16768+ PTR? 91.128.125.74.in-addr.arpa. (44)
+23:04:27.237402 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.57366: 16768 1/4/4 PTR hg-in-f91.1e100.net. (223)
+23:04:27.476421 IP 192.168.100.11.52273 > hg-in-f93.1e100.net.https: Flags [S], seq 1731926489, win 14600, options [mss 1460,sackOK,TS val 173920787 ecr 0,nop,wscale 7], length 0
+23:04:27.476586 IP 192.168.100.11.43242 > c.center-dns.jsinfo.net.domain: 10339+ PTR? 93.128.125.74.in-addr.arpa. (44)
+23:04:27.487286 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.43242: 10339 1/4/4 PTR hg-in-f93.1e100.net. (223)
+23:04:27.650377 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1783, length 64
+23:04:27.650416 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1783, length 64
+23:04:28.240928 IP 192.168.100.8 > 224.0.0.253: igmp v2 report 224.0.0.253
+23:04:28.241107 IP 192.168.100.11.35822 > c.center-dns.jsinfo.net.domain: 8293+ PTR? 253.0.0.224.in-addr.arpa. (42)
+23:04:28.253168 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.35822: 8293 NXDomain 0/1/0 (99)
+23:04:28.253337 IP 192.168.100.11.53562 > c.center-dns.jsinfo.net.domain: 46396+ PTR? 8.100.168.192.in-addr.arpa. (44)
+23:04:28.263575 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.53562: 46396 NXDomain* 0/1/0 (79)
+23:04:28.303130 IP 192.168.100.8 > 224.0.0.253: igmp v2 report 224.0.0.253
+23:04:28.412360 ARP, Request who-has 192.168.100.254 tell 192.168.100.8, length 46
+23:04:28.412552 IP 192.168.100.11.48092 > c.center-dns.jsinfo.net.domain: 3180+ PTR? 254.100.168.192.in-addr.arpa. (46)
+23:04:28.423320 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.48092: 3180 NXDomain* 0/1/0 (81)
+23:04:28.452256 IP 192.168.100.8 > 224.0.0.252: igmp v2 report 224.0.0.252
+23:04:28.452386 IP 192.168.100.11.55472 > c.center-dns.jsinfo.net.domain: 52931+ PTR? 252.0.0.224.in-addr.arpa. (42)
+23:04:28.453209 IP6 fe80::1151:8ec1:1d5a:2674.51295 > ff02::1:3.hostmon: UDP, length 24
+23:04:28.453375 IP 192.168.100.8.50100 > 224.0.0.252.hostmon: UDP, length 24
+23:04:28.462439 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.55472: 52931 NXDomain 0/1/0 (99)
+23:04:28.462609 IP 192.168.100.11.50046 > c.center-dns.jsinfo.net.domain: 42939+ PTR? 3.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+23:04:28.474079 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.50046: 42939 NXDomain 0/1/0 (160)
+23:04:28.474222 IP 192.168.100.11.44770 > c.center-dns.jsinfo.net.domain: 44695+ PTR? 4.7.6.2.a.5.d.1.1.c.e.8.1.5.1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+23:04:28.483306 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.44770: 44695 NXDomain* 0/1/0 (125)
+23:04:28.553112 IP6 fe80::1151:8ec1:1d5a:2674.51295 > ff02::1:3.hostmon: UDP, length 24
+23:04:28.553142 IP 192.168.100.8.50100 > 224.0.0.252.hostmon: UDP, length 24
+23:04:28.606252 ARP, Request who-has 192.168.100.254 tell 192.168.100.8, length 46
+23:04:28.651303 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1784, length 64
+23:04:28.651337 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1784, length 64
+23:04:28.685476 ARP, Request who-has 192.168.100.254 tell 192.168.100.8, length 46
+23:04:28.753252 IP 192.168.100.8 > all-routers.mcast.net: igmp leave 224.0.0.252
+23:04:28.753434 IP 192.168.100.11.56923 > c.center-dns.jsinfo.net.domain: 41168+ PTR? 2.0.0.224.in-addr.arpa. (40)
+23:04:28.753654 IP 192.168.100.8 > 224.0.0.252: igmp v2 report 224.0.0.252
+23:04:28.754158 IP6 fe80::1151:8ec1:1d5a:2674.53556 > ff02::1:3.hostmon: UDP, length 24
+23:04:28.754409 IP 192.168.100.8.53043 > 224.0.0.252.hostmon: UDP, length 24
+23:04:28.762960 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.56923: 41168 1/4/7 PTR all-routers.mcast.net. (322)
+23:04:28.803092 IP 192.168.100.8 > 224.0.0.252: igmp v2 report 224.0.0.252
+23:04:28.830303 ARP, Request who-has 192.168.100.254 tell 192.168.100.8, length 46
+23:04:28.854086 IP6 fe80::1151:8ec1:1d5a:2674.53556 > ff02::1:3.hostmon: UDP, length 24
+23:04:28.854131 IP 192.168.100.8.53043 > 224.0.0.252.hostmon: UDP, length 24
+23:04:28.917594 ARP, Request who-has 192.168.100.254 tell 192.168.100.8, length 46
+23:04:29.054549 IP 192.168.100.8 > all-routers.mcast.net: igmp leave 224.0.0.252
+23:04:29.054995 IP 192.168.100.8 > 224.0.0.252: igmp v2 report 224.0.0.252
+23:04:29.055491 IP6 fe80::1151:8ec1:1d5a:2674.58896 > ff02::1:3.hostmon: UDP, length 24
+23:04:29.055690 IP 192.168.100.8.59371 > 224.0.0.252.hostmon: UDP, length 24
+23:04:29.155227 IP6 fe80::1151:8ec1:1d5a:2674.58896 > ff02::1:3.hostmon: UDP, length 24
+23:04:29.155259 IP 192.168.100.8.59371 > 224.0.0.252.hostmon: UDP, length 24
+23:04:29.303257 IP 192.168.100.8 > 224.0.0.252: igmp v2 report 224.0.0.252
+23:04:29.652472 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1785, length 64
+23:04:29.652518 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1785, length 64
+23:04:30.654465 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1786, length 64
+23:04:30.654512 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1786, length 64
+23:04:30.955673 IP 192.168.100.6.17500 > 255.255.255.255.17500: UDP, length 110
+23:04:30.955858 IP 192.168.100.11.41418 > c.center-dns.jsinfo.net.domain: 53380+ PTR? 255.255.255.255.in-addr.arpa. (46)
+23:04:30.958532 IP 192.168.100.6.17500 > 192.168.103.255.17500: UDP, length 110
+23:04:30.966426 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.41418: 53380* 0/1/0 (81)
+23:04:30.966571 IP 192.168.100.11.36521 > c.center-dns.jsinfo.net.domain: 30275+ PTR? 6.100.168.192.in-addr.arpa. (44)
+23:04:30.977029 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.36521: 30275 NXDomain* 0/1/0 (79)
+23:04:30.977189 IP 192.168.100.11.40195 > c.center-dns.jsinfo.net.domain: 37498+ PTR? 255.103.168.192.in-addr.arpa. (46)
+23:04:30.988431 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.40195: 37498 NXDomain* 0/1/0 (81)
+23:04:31.225402 IP 192.168.100.11.38206 > hg-in-f91.1e100.net.https: Flags [S], seq 2670776608, win 14600, options [mss 1460,sackOK,TS val 173924536 ecr 0,nop,wscale 7], length 0
+23:04:31.476422 IP 192.168.100.11.52273 > hg-in-f93.1e100.net.https: Flags [S], seq 1731926489, win 14600, options [mss 1460,sackOK,TS val 173924787 ecr 0,nop,wscale 7], length 0
+23:04:31.656601 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1787, length 64
+23:04:31.656641 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1787, length 64
+23:04:32.650406 ARP, Request who-has 192.168.100.71 tell 192.168.100.11, length 28
+23:04:32.650678 ARP, Reply 192.168.100.71 is-at 52:54:00:59:ff:3e (oui Unknown), length 28
+23:04:32.657596 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1788, length 64
+23:04:32.657637 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1788, length 64
+23:04:33.659445 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1789, length 64
+23:04:33.659490 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1789, length 64
+23:04:34.661325 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1790, length 64
+23:04:34.661371 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1790, length 64
+23:04:35.381342 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [.], ack 4120161526, win 501, options [nop,nop,TS val 173928692 ecr 443893413], length 0
+23:04:35.381501 IP 192.168.100.11.56691 > c.center-dns.jsinfo.net.domain: 55676+ PTR? 125.72.194.173.in-addr.arpa. (45)
+23:04:35.391230 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.56691: 55676 ServFail 0/0/0 (45)
+23:04:35.391398 IP 192.168.100.11.48969 > a.center-dns.jsinfo.net.domain: 55676+ PTR? 125.72.194.173.in-addr.arpa. (45)
+23:04:35.435698 IP a.center-dns.jsinfo.net.domain > 192.168.100.11.48969: 55676 1/4/4 PTR tf-in-f125.1e100.net. (225)
+23:04:35.435912 IP 192.168.100.11.54214 > c.center-dns.jsinfo.net.domain: 35247+ PTR? 1.135.2.218.in-addr.arpa. (42)
+23:04:35.438602 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [.], ack 1, win 1002, options [nop,nop,TS val 443938470 ecr 173793518], length 0
+23:04:35.448056 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.54214: 35247 1/2/2 PTR a.center-dns.jsinfo.net. (154)
+23:04:35.662558 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1791, length 64
+23:04:35.662595 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1791, length 64
+23:04:35.811414 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 3011578293, win 501, length 0
+23:04:35.811573 IP 192.168.100.11.46729 > c.center-dns.jsinfo.net.domain: 35495+ PTR? 200.235.125.74.in-addr.arpa. (45)
+23:04:35.822673 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.46729: 35495 1/4/4 PTR kix01s01-in-f8.1e100.net. (229)
+23:04:35.896534 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 1, win 1002, length 0
+23:04:36.664677 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1792, length 64
+23:04:36.664723 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1792, length 64
+23:04:37.665863 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1793, length 64
+23:04:37.665905 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1793, length 64
+23:04:38.668038 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1794, length 64
+23:04:38.668083 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1794, length 64
+23:04:39.225424 IP 192.168.100.11.38206 > hg-in-f91.1e100.net.https: Flags [S], seq 2670776608, win 14600, options [mss 1460,sackOK,TS val 173932536 ecr 0,nop,wscale 7], length 0
+23:04:39.476424 IP 192.168.100.11.52273 > hg-in-f93.1e100.net.https: Flags [S], seq 1731926489, win 14600, options [mss 1460,sackOK,TS val 173932787 ecr 0,nop,wscale 7], length 0
+23:04:39.669136 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1795, length 64
+23:04:39.669174 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1795, length 64
+23:04:40.671060 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1796, length 64
+23:04:40.671105 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1796, length 64
+23:04:41.673219 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1797, length 64
+23:04:41.673264 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1797, length 64
+23:04:42.674439 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1798, length 64
+23:04:42.674485 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1798, length 64
+23:04:43.185405 ARP, Request who-has 192.168.100.254 tell 192.168.100.11, length 28
+23:04:43.186228 ARP, Reply 192.168.100.254 is-at 54:75:d0:28:3f:4b (oui Unknown), length 46
+23:04:43.675646 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1799, length 64
+23:04:43.675691 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1799, length 64
+23:04:44.676742 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1800, length 64
+23:04:44.676789 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1800, length 64
+23:04:45.677954 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1801, length 64
+23:04:45.678000 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1801, length 64
+23:04:46.679008 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1802, length 64
+23:04:46.679053 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1802, length 64
+23:04:47.681151 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1803, length 64
+23:04:47.681197 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1803, length 64
+23:04:48.682172 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1804, length 64
+23:04:48.682219 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1804, length 64
+23:04:49.683380 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1805, length 64
+23:04:49.683432 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1805, length 64
+23:04:50.684328 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1806, length 64
+23:04:50.684375 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1806, length 64
+23:04:51.685563 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1807, length 64
+23:04:51.685610 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1807, length 64
+23:04:52.686756 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1808, length 64
+23:04:52.686802 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1808, length 64
+23:04:53.687831 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1809, length 64
+23:04:53.687878 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1809, length 64
+23:04:54.216179 IP 192.168.100.11.30685 > c.center-dns.jsinfo.net.domain: 63262+ A? alt1-safebrowsing.google.com. (46)
+23:04:54.227553 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.30685: 63262 11/4/4 A 173.194.38.41, A 173.194.38.35, A 173.194.38.32, A 173.194.38.40, A 173.194.38.33, A 173.194.38.39, A 173.194.38.46, A 173.194.38.34, A 173.194.38.37, A 173.194.38.36, A 173.194.38.38 (358)
+23:04:54.227891 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [S], seq 3234358587, win 14600, options [mss 1460,sackOK,TS val 173947538 ecr 0,nop,wscale 7], length 0
+23:04:54.228140 IP 192.168.100.11.34944 > c.center-dns.jsinfo.net.domain: 42236+ PTR? 41.38.194.173.in-addr.arpa. (44)
+23:04:54.239524 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.34944: 42236 1/4/4 PTR kix01s04-in-f9.1e100.net. (228)
+23:04:54.309520 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [S.], seq 2770510629, ack 3234358588, win 62920, options [mss 1380,nop,nop,sackOK,nop,wscale 6], length 0
+23:04:54.309567 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [.], ack 1, win 115, length 0
+23:04:54.310214 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [P.], seq 1:150, ack 1, win 115, length 149
+23:04:54.392621 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [.], ack 150, win 1000, length 0
+23:04:54.394597 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [.], seq 1:1381, ack 150, win 1000, length 1380
+23:04:54.394622 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [.], ack 1381, win 136, length 0
+23:04:54.394635 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [P.], seq 1381:2400, ack 150, win 1000, length 1019
+23:04:54.394648 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [.], ack 2400, win 158, length 0
+23:04:54.395588 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [P.], seq 150:372, ack 2400, win 158, length 222
+23:04:54.478799 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [P.], seq 2400:2642, ack 372, win 1002, length 242
+23:04:54.478841 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [P.], seq 2642:2695, ack 372, win 1002, length 53
+23:04:54.478934 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [.], ack 2695, win 179, length 0
+23:04:54.479941 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [P.], seq 372:425, ack 2695, win 179, length 53
+23:04:54.480093 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [P.], seq 425:486, ack 2695, win 179, length 61
+23:04:54.480600 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [P.], seq 486:951, ack 2695, win 179, length 465
+23:04:54.480839 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [P.], seq 951:1251, ack 2695, win 179, length 300
+23:04:54.511116 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [P.], seq 1:543, ack 1, win 1002, options [nop,nop,TS val 443957543 ecr 173793518], length 542
+23:04:54.511162 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [.], ack 543, win 499, options [nop,nop,TS val 173947821 ecr 443957543], length 0
+23:04:54.562945 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [.], ack 486, win 1002, length 0
+23:04:54.564240 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [.], ack 1251, win 1002, length 0
+23:04:54.605839 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [P.], seq 2695:2911, ack 1251, win 1002, length 216
+23:04:54.605866 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [P.], seq 2911:3751, ack 1251, win 1002, length 840
+23:04:54.605956 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [.], ack 3751, win 222, length 0
+23:04:54.607277 IP 192.168.100.11.12523 > c.center-dns.jsinfo.net.domain: 17440+ A? safebrowsing-cache.google.com. (47)
+23:04:54.618020 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.12523: 17440 7/4/4 CNAME safebrowsing.cache.l.google.com., A 74.125.128.100, A 74.125.128.139, A 74.125.128.101, A 74.125.128.113, A 74.125.128.102, A 74.125.128.138 (314)
+23:04:54.618296 IP 192.168.100.11.39453 > hg-in-f100.1e100.net.https: Flags [S], seq 1520119652, win 14600, options [mss 1460,sackOK,TS val 173947928 ecr 0,nop,wscale 7], length 0
+23:04:54.618493 IP 192.168.100.11.33422 > c.center-dns.jsinfo.net.domain: 59284+ PTR? 100.128.125.74.in-addr.arpa. (45)
+23:04:54.630878 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.33422: 59284 1/4/4 PTR hg-in-f100.1e100.net. (225)
+23:04:54.688895 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1810, length 64
+23:04:54.688928 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1810, length 64
+23:04:54.765523 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 1:519, ack 1, win 501, length 518
+23:04:54.765746 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 519:556, ack 1, win 501, length 37
+23:04:54.766208 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], seq 556:3316, ack 1, win 501, length 2760
+23:04:54.766234 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 3316:3441, ack 1, win 501, length 125
+23:04:54.766462 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 3441:3707, ack 1, win 501, length 266
+23:04:54.850785 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 519, win 1002, length 0
+23:04:54.852252 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 556, win 1002, length 0
+23:04:54.852278 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 1:38, ack 556, win 1002, length 37
+23:04:54.852295 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 38, win 501, length 0
+23:04:54.853648 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 3441, win 1002, length 0
+23:04:54.858164 IP 192.168.100.11.56722 > c.center-dns.jsinfo.net.domain: 33500+ A? safebrowsing-cache.google.com. (47)
+23:04:54.868440 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.56722: 33500 7/4/4 CNAME safebrowsing.cache.l.google.com., A 74.125.128.113, A 74.125.128.102, A 74.125.128.138, A 74.125.128.100, A 74.125.128.139, A 74.125.128.101 (314)
+23:04:54.868747 IP 192.168.100.11.35213 > hg-in-f113.1e100.net.https: Flags [S], seq 3873076753, win 14600, options [mss 1460,sackOK,TS val 173948179 ecr 0,nop,wscale 7], length 0
+23:04:54.868915 IP 192.168.100.11.33646 > c.center-dns.jsinfo.net.domain: 65048+ PTR? 113.128.125.74.in-addr.arpa. (45)
+23:04:54.880448 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.33646: 65048 1/4/4 PTR hg-in-f113.1e100.net. (225)
+23:04:54.893704 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 3707, win 1002, length 0
+23:04:54.939278 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 133
+23:04:54.939302 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 132
+23:04:54.939312 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 137
+23:04:54.939421 IP 192.168.100.11.46289 > c.center-dns.jsinfo.net.domain: 59513+ PTR? 250.255.255.239.in-addr.arpa. (46)
+23:04:54.939535 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 101
+23:04:54.939549 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 101
+23:04:54.950603 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.46289: 59513 NXDomain 0/1/0 (103)
+23:04:54.950738 IP 192.168.100.11.32981 > c.center-dns.jsinfo.net.domain: 38165+ PTR? 84.100.168.192.in-addr.arpa. (45)
+23:04:54.962712 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.32981: 38165 NXDomain* 0/1/0 (80)
+23:04:55.112728 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [P.], seq 1:413, ack 543, win 501, options [nop,nop,TS val 173948423 ecr 443957543], length 412
+23:04:55.170421 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [.], ack 413, win 1002, options [nop,nop,TS val 443958203 ecr 173948423], length 0
+23:04:55.225415 IP 192.168.100.11.38206 > hg-in-f91.1e100.net.https: Flags [S], seq 2670776608, win 14600, options [mss 1460,sackOK,TS val 173948536 ecr 0,nop,wscale 7], length 0
+23:04:55.476421 IP 192.168.100.11.52273 > hg-in-f93.1e100.net.https: Flags [S], seq 1731926489, win 14600, options [mss 1460,sackOK,TS val 173948787 ecr 0,nop,wscale 7], length 0
+23:04:55.617379 IP 192.168.100.11.39453 > hg-in-f100.1e100.net.https: Flags [S], seq 1520119652, win 14600, options [mss 1460,sackOK,TS val 173948928 ecr 0,nop,wscale 7], length 0
+23:04:55.690050 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1811, length 64
+23:04:55.690088 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1811, length 64
+23:04:55.868418 IP 192.168.100.11.35213 > hg-in-f113.1e100.net.https: Flags [S], seq 3873076753, win 14600, options [mss 1460,sackOK,TS val 173949179 ecr 0,nop,wscale 7], length 0
+23:04:56.691011 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1812, length 64
+23:04:56.691054 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1812, length 64
+23:04:57.617379 IP 192.168.100.11.39453 > hg-in-f100.1e100.net.https: Flags [S], seq 1520119652, win 14600, options [mss 1460,sackOK,TS val 173950928 ecr 0,nop,wscale 7], length 0
+23:04:57.692239 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1813, length 64
+23:04:57.692280 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1813, length 64
+23:04:57.868419 IP 192.168.100.11.35213 > hg-in-f113.1e100.net.https: Flags [S], seq 3873076753, win 14600, options [mss 1460,sackOK,TS val 173951179 ecr 0,nop,wscale 7], length 0
+23:04:58.678050 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 38:108, ack 3707, win 1002, length 70
+23:04:58.678100 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 108, win 501, length 0
+23:04:58.678907 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 108:1488, ack 3707, win 1002, length 1380
+23:04:58.678935 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 1488, win 499, length 0
+23:04:58.678950 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 1488:2868, ack 3707, win 1002, length 1380
+23:04:58.678967 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 2868, win 489, length 0
+23:04:58.678976 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 2868:4248, ack 3707, win 1002, length 1380
+23:04:58.678984 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 4248:4314, ack 3707, win 1002, length 66
+23:04:58.678998 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 4248, win 499, length 0
+23:04:58.679016 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 4314, win 499, length 0
+23:04:58.679282 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 4314:5694, ack 3707, win 1002, length 1380
+23:04:58.679310 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 5694, win 489, length 0
+23:04:58.680552 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 5694:7074, ack 3707, win 1002, length 1380
+23:04:58.680574 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 7074, win 499, length 0
+23:04:58.680589 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 7074:8213, ack 3707, win 1002, length 1139
+23:04:58.680605 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 8213, win 491, length 0
+23:04:58.694265 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1814, length 64
+23:04:58.694304 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1814, length 64
+23:04:59.696387 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1815, length 64
+23:04:59.696445 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1815, length 64
+23:05:00.246284 IP6 fe80::1151:8ec1:1d5a:2674.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:00.246493 IP 192.168.100.11.54934 > c.center-dns.jsinfo.net.domain: 20264+ PTR? 2.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+23:05:00.258512 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.54934: 20264 NXDomain 0/1/0 (160)
+23:05:00.697425 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1816, length 64
+23:05:00.697470 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1816, length 64
+23:05:00.972687 IP 192.168.100.6.17500 > 255.255.255.255.17500: UDP, length 110
+23:05:00.975707 IP 192.168.100.6.17500 > 192.168.103.255.17500: UDP, length 110
+23:05:01.246469 IP6 fe80::1151:8ec1:1d5a:2674.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:01.617427 IP 192.168.100.11.39453 > hg-in-f100.1e100.net.https: Flags [S], seq 1520119652, win 14600, options [mss 1460,sackOK,TS val 173954928 ecr 0,nop,wscale 7], length 0
+23:05:01.698495 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1817, length 64
+23:05:01.698538 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1817, length 64
+23:05:01.868417 IP 192.168.100.11.35213 > hg-in-f113.1e100.net.https: Flags [S], seq 3873076753, win 14600, options [mss 1460,sackOK,TS val 173955179 ecr 0,nop,wscale 7], length 0
+23:05:02.700593 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1818, length 64
+23:05:02.700639 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1818, length 64
+23:05:03.008739 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [P.], seq 543:1085, ack 413, win 1002, options [nop,nop,TS val 443966041 ecr 173948423], length 542
+23:05:03.008785 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [.], ack 1085, win 499, options [nop,nop,TS val 173956319 ecr 443966041], length 0
+23:05:03.246516 IP6 fe80::1151:8ec1:1d5a:2674.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:03.262838 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 3707:4224, ack 8213, win 501, length 517
+23:05:03.263241 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], seq 4224:6984, ack 8213, win 501, length 2760
+23:05:03.263267 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 6984:7109, ack 8213, win 501, length 125
+23:05:03.263600 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 7109:7371, ack 8213, win 501, length 262
+23:05:03.348218 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 4224, win 1002, length 0
+23:05:03.349492 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 7109, win 957, length 0
+23:05:03.349519 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 7371, win 1002, length 0
+23:05:03.420040 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 8213:8282, ack 7371, win 1002, length 69
+23:05:03.420071 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 8282, win 501, length 0
+23:05:03.420380 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 8282:9662, ack 7371, win 1002, length 1380
+23:05:03.420401 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 9662, win 499, length 0
+23:05:03.420412 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 9662:11042, ack 7371, win 1002, length 1380
+23:05:03.420424 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 11042, win 489, length 0
+23:05:03.420432 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 11042:12422, ack 7371, win 1002, length 1380
+23:05:03.420441 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 12422, win 479, length 0
+23:05:03.420448 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 12422:12488, ack 7371, win 1002, length 66
+23:05:03.420457 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 12488, win 479, length 0
+23:05:03.421586 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 12488:13868, ack 7371, win 1002, length 1380
+23:05:03.421611 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 13868, win 499, length 0
+23:05:03.421626 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 13868:15248, ack 7371, win 1002, length 1380
+23:05:03.421642 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 15248, win 489, length 0
+23:05:03.421659 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 15248:16386, ack 7371, win 1002, length 1138
+23:05:03.421673 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 16386, win 481, length 0
+23:05:03.464673 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [P.], seq 413:825, ack 1085, win 501, options [nop,nop,TS val 173956775 ecr 443966041], length 412
+23:05:03.522811 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [.], ack 825, win 1002, options [nop,nop,TS val 443966555 ecr 173956775], length 0
+23:05:03.701877 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1819, length 64
+23:05:03.701919 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1819, length 64
+23:05:04.703158 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1820, length 64
+23:05:04.703204 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1820, length 64
+23:05:05.518257 ARP, Request who-has 192.168.100.254 tell 192.168.100.84, length 46
+23:05:05.705184 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1821, length 64
+23:05:05.705227 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1821, length 64
+23:05:06.706315 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1822, length 64
+23:05:06.706359 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1822, length 64
+23:05:07.246858 IP6 fe80::1151:8ec1:1d5a:2674.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:07.707581 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1823, length 64
+23:05:07.707628 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1823, length 64
+23:05:08.709031 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1824, length 64
+23:05:08.709077 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1824, length 64
+23:05:09.617425 IP 192.168.100.11.39453 > hg-in-f100.1e100.net.https: Flags [S], seq 1520119652, win 14600, options [mss 1460,sackOK,TS val 173962928 ecr 0,nop,wscale 7], length 0
+23:05:09.710063 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1825, length 64
+23:05:09.710103 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1825, length 64
+23:05:09.868425 IP 192.168.100.11.35213 > hg-in-f113.1e100.net.https: Flags [S], seq 3873076753, win 14600, options [mss 1460,sackOK,TS val 173963179 ecr 0,nop,wscale 7], length 0
+23:05:10.712317 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1826, length 64
+23:05:10.712365 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1826, length 64
+23:05:11.714362 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1827, length 64
+23:05:11.714407 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1827, length 64
+23:05:12.715580 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1828, length 64
+23:05:12.715627 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1828, length 64
+23:05:13.716840 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1829, length 64
+23:05:13.716886 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1829, length 64
+23:05:14.717818 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1830, length 64
+23:05:14.717865 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1830, length 64
+23:05:15.173524 IP 192.168.100.4.netbios-dgm > 192.168.103.255.netbios-dgm: NBT UDP PACKET(138)
+23:05:15.173758 IP 192.168.100.11.58640 > c.center-dns.jsinfo.net.domain: 50264+ PTR? 4.100.168.192.in-addr.arpa. (44)
+23:05:15.184522 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.58640: 50264 NXDomain* 0/1/0 (79)
+23:05:15.255413 IP6 fe80::1151:8ec1:1d5a:2674.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:15.718929 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1831, length 64
+23:05:15.718976 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1831, length 64
+23:05:15.729229 IP 192.168.100.6.5997 > 255.255.255.255.5998: UDP, length 12
+23:05:16.720044 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1832, length 64
+23:05:16.720091 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1832, length 64
+23:05:17.721263 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1833, length 64
+23:05:17.721323 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1833, length 64
+23:05:18.123670 IP 192.168.100.84.netbios-dgm > 192.168.103.255.netbios-dgm: NBT UDP PACKET(138)
+23:05:18.722420 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1834, length 64
+23:05:18.722467 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1834, length 64
+23:05:19.723554 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1835, length 64
+23:05:19.723600 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1835, length 64
+23:05:20.718404 ARP, Request who-has 192.168.100.71 tell 192.168.100.11, length 28
+23:05:20.718690 ARP, Reply 192.168.100.71 is-at 52:54:00:59:ff:3e (oui Unknown), length 28
+23:05:20.724579 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1836, length 64
+23:05:20.724621 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1836, length 64
+23:05:21.725586 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1837, length 64
+23:05:21.725633 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1837, length 64
+23:05:22.726796 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1838, length 64
+23:05:22.726844 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1838, length 64
+23:05:23.727980 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1839, length 64
+23:05:23.728025 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1839, length 64
+23:05:24.056791 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length 133
+23:05:24.056821 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length 132
+23:05:24.056830 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length 137
+23:05:24.056839 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length 101
+23:05:24.056847 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length 101
+23:05:24.056992 IP 192.168.100.11.33606 > c.center-dns.jsinfo.net.domain: 39097+ PTR? 85.100.168.192.in-addr.arpa. (45)
+23:05:24.067407 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.33606: 39097 NXDomain* 0/1/0 (80)
+23:05:24.729042 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1840, length 64
+23:05:24.729087 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1840, length 64
+23:05:25.617425 IP 192.168.100.11.39453 > hg-in-f100.1e100.net.https: Flags [S], seq 1520119652, win 14600, options [mss 1460,sackOK,TS val 173978928 ecr 0,nop,wscale 7], length 0
+23:05:25.731138 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1841, length 64
+23:05:25.731176 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1841, length 64
+23:05:25.868373 IP 192.168.100.11.35213 > hg-in-f113.1e100.net.https: Flags [S], seq 3873076753, win 14600, options [mss 1460,sackOK,TS val 173979179 ecr 0,nop,wscale 7], length 0
+23:05:26.330827 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [P.], seq 1085:1627, ack 825, win 1002, options [nop,nop,TS val 443989363 ecr 173956775], length 542
+23:05:26.330876 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [.], ack 1627, win 499, options [nop,nop,TS val 173979641 ecr 443989363], length 0
+23:05:26.584915 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 7371:7888, ack 16386, win 501, length 517
+23:05:26.585141 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 7888:7925, ack 16386, win 501, length 37
+23:05:26.585533 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], seq 7925:10685, ack 16386, win 501, length 2760
+23:05:26.585565 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 10685:10810, ack 16386, win 501, length 125
+23:05:26.585822 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 10810:11072, ack 16386, win 501, length 262
+23:05:26.670873 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 7888, win 1002, length 0
+23:05:26.670907 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 7925, win 1002, length 0
+23:05:26.670921 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 16386:16423, ack 7925, win 1002, length 37
+23:05:26.670937 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 16423, win 501, length 0
+23:05:26.671648 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 10810, win 1002, length 0
+23:05:26.712452 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 11072, win 1002, length 0
+23:05:26.732812 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 16423:16493, ack 11072, win 1002, length 70
+23:05:26.732840 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 16493, win 501, length 0
+23:05:26.732855 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 16493:17873, ack 11072, win 1002, length 1380
+23:05:26.732869 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 17873, win 491, length 0
+23:05:26.733165 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 17873:19253, ack 11072, win 1002, length 1380
+23:05:26.733179 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1842, length 64
+23:05:26.733185 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 19253, win 499, length 0
+23:05:26.733194 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 19253:20633, ack 11072, win 1002, length 1380
+23:05:26.733204 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 20633, win 489, length 0
+23:05:26.733209 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1842, length 64
+23:05:26.733210 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 20633:20699, ack 11072, win 1002, length 66
+23:05:26.733219 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 20699, win 489, length 0
+23:05:26.733504 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 20699:22079, ack 11072, win 1002, length 1380
+23:05:26.733529 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 22079, win 499, length 0
+23:05:26.734760 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 22079:23459, ack 11072, win 1002, length 1380
+23:05:26.734788 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 23459, win 499, length 0
+23:05:26.734804 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 23459:24839, ack 11072, win 1002, length 1380
+23:05:26.734818 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 24839, win 489, length 0
+23:05:26.734827 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 24839:26198, ack 11072, win 1002, length 1359
+23:05:26.734836 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 26198, win 479, length 0
+23:05:26.911421 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [P.], seq 825:1237, ack 1627, win 501, options [nop,nop,TS val 173980222 ecr 443989363], length 412
+23:05:26.969055 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [.], ack 1237, win 1002, options [nop,nop,TS val 443990002 ecr 173980222], length 0
+23:05:27.225476 IP 192.168.100.11.43537 > hg-in-f136.1e100.net.https: Flags [S], seq 2854258407, win 14600, options [mss 1460,sackOK,TS val 173980536 ecr 0,nop,wscale 7], length 0
+23:05:27.225676 IP 192.168.100.11.52896 > c.center-dns.jsinfo.net.domain: 41826+ PTR? 136.128.125.74.in-addr.arpa. (45)
+23:05:27.237317 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.52896: 41826 1/4/4 PTR hg-in-f136.1e100.net. (225)
+23:05:27.476457 IP 192.168.100.11.38213 > hg-in-f91.1e100.net.https: Flags [S], seq 1004772833, win 14600, options [mss 1460,sackOK,TS val 173980787 ecr 0,nop,wscale 7], length 0
+23:05:27.734533 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1843, length 64
+23:05:27.734575 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1843, length 64
+23:05:28.225422 IP 192.168.100.11.43537 > hg-in-f136.1e100.net.https: Flags [S], seq 2854258407, win 14600, options [mss 1460,sackOK,TS val 173981536 ecr 0,nop,wscale 7], length 0
+23:05:28.476594 IP 192.168.100.11.38213 > hg-in-f91.1e100.net.https: Flags [S], seq 1004772833, win 14600, options [mss 1460,sackOK,TS val 173981787 ecr 0,nop,wscale 7], length 0
+23:05:28.736386 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1844, length 64
+23:05:28.736429 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1844, length 64
+23:05:29.737450 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1845, length 64
+23:05:29.737502 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1845, length 64
+23:05:30.225423 IP 192.168.100.11.43537 > hg-in-f136.1e100.net.https: Flags [S], seq 2854258407, win 14600, options [mss 1460,sackOK,TS val 173983536 ecr 0,nop,wscale 7], length 0
+23:05:30.476592 IP 192.168.100.11.38213 > hg-in-f91.1e100.net.https: Flags [S], seq 1004772833, win 14600, options [mss 1460,sackOK,TS val 173983787 ecr 0,nop,wscale 7], length 0
+23:05:30.738618 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1846, length 64
+23:05:30.738664 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1846, length 64
+23:05:30.989578 IP 192.168.100.6.17500 > 255.255.255.255.17500: UDP, length 110
+23:05:30.992475 IP 192.168.100.6.17500 > 192.168.103.255.17500: UDP, length 110
+23:05:31.256347 IP6 fe80::1151:8ec1:1d5a:2674.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:31.740625 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1847, length 64
+23:05:31.740672 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1847, length 64
+23:05:32.741816 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1848, length 64
+23:05:32.741858 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1848, length 64
+23:05:33.743170 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1849, length 64
+23:05:33.743216 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1849, length 64
+23:05:34.225357 IP 192.168.100.11.43537 > hg-in-f136.1e100.net.https: Flags [S], seq 2854258407, win 14600, options [mss 1460,sackOK,TS val 173987536 ecr 0,nop,wscale 7], length 0
+23:05:34.476586 IP 192.168.100.11.38213 > hg-in-f91.1e100.net.https: Flags [S], seq 1004772833, win 14600, options [mss 1460,sackOK,TS val 173987787 ecr 0,nop,wscale 7], length 0
+23:05:34.744234 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1850, length 64
+23:05:34.744293 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1850, length 64
+23:05:35.745414 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1851, length 64
+23:05:35.745459 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1851, length 64
+23:05:36.746482 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1852, length 64
+23:05:36.746529 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1852, length 64
+23:05:37.747761 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1853, length 64
+23:05:37.747801 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1853, length 64
+23:05:38.353313 IP 192.168.100.11.53235 > c.center-dns.jsinfo.net.domain: 62363+ A? clients2.google.com. (37)
+23:05:38.363971 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.53235: 62363 13/4/4 CNAME clients.l.google.com., CNAME clients-china.l.google.com., A 74.125.235.199, A 74.125.235.192, A 74.125.235.195, A 74.125.235.194, A 74.125.235.196, A 74.125.235.198, A 74.125.235.206, A 74.125.235.197, A 74.125.235.193, A 74.125.235.200, A 74.125.235.201 (401)
+23:05:38.364269 IP 192.168.100.11.37835 > kix01s01-in-f7.1e100.net.http: Flags [S], seq 2418698124, win 14600, options [mss 1460,sackOK,TS val 173991674 ecr 0,nop,wscale 7], length 0
+23:05:38.364469 IP 192.168.100.11.49071 > c.center-dns.jsinfo.net.domain: 64290+ PTR? 199.235.125.74.in-addr.arpa. (45)
+23:05:38.376841 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.49071: 64290 1/4/4 PTR kix01s01-in-f7.1e100.net. (229)
+23:05:38.449291 IP kix01s01-in-f7.1e100.net.http > 192.168.100.11.37835: Flags [S.], seq 2935096335, ack 2418698125, win 62920, options [mss 1380,nop,nop,sackOK,nop,wscale 6], length 0
+23:05:38.449337 IP 192.168.100.11.37835 > kix01s01-in-f7.1e100.net.http: Flags [.], ack 1, win 115, length 0
+23:05:38.449583 IP 192.168.100.11.37835 > kix01s01-in-f7.1e100.net.http: Flags [P.], seq 1:450, ack 1, win 115, length 449
+23:05:38.536729 IP kix01s01-in-f7.1e100.net.http > 192.168.100.11.37835: Flags [.], ack 450, win 1000, length 0
+23:05:38.749680 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1854, length 64
+23:05:38.749722 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1854, length 64
+23:05:38.812749 IP kix01s01-in-f7.1e100.net.http > 192.168.100.11.37835: Flags [P.], seq 1:628, ack 450, win 1000, length 627
+23:05:38.812789 IP 192.168.100.11.37835 > kix01s01-in-f7.1e100.net.http: Flags [.], ack 628, win 124, length 0
+23:05:39.605400 IP 192.168.100.11.45365 > kix01s04-in-f9.1e100.net.https: Flags [.], ack 3751, win 222, length 0
+23:05:39.687894 IP kix01s04-in-f9.1e100.net.https > 192.168.100.11.45365: Flags [.], ack 1251, win 1002, length 0
+23:05:39.750838 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1855, length 64
+23:05:39.750875 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1855, length 64
+23:05:39.884411 IP6 fe80::d3:3078:fcb7:2f2.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:39.884584 IP 192.168.100.11.56456 > c.center-dns.jsinfo.net.domain: 55485+ PTR? 2.f.2.0.7.b.c.f.8.7.0.3.3.d.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+23:05:39.894639 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.56456: 55485 NXDomain* 0/1/0 (125)
+23:05:40.752953 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1856, length 64
+23:05:40.752999 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1856, length 64
+23:05:40.884649 IP6 fe80::d3:3078:fcb7:2f2.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:41.648366 ARP, Request who-has 192.168.101.42 tell 192.168.100.10, length 46
+23:05:41.648609 IP 192.168.100.11.52567 > c.center-dns.jsinfo.net.domain: 4702+ PTR? 42.101.168.192.in-addr.arpa. (45)
+23:05:41.657997 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.52567: 4702 NXDomain* 0/1/0 (80)
+23:05:41.658145 IP 192.168.100.11.59924 > c.center-dns.jsinfo.net.domain: 25369+ PTR? 10.100.168.192.in-addr.arpa. (45)
+23:05:41.669534 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.59924: 25369 NXDomain* 0/1/0 (80)
+23:05:41.754113 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1857, length 64
+23:05:41.754148 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1857, length 64
+23:05:42.225355 IP 192.168.100.11.43537 > hg-in-f136.1e100.net.https: Flags [S], seq 2854258407, win 14600, options [mss 1460,sackOK,TS val 173995536 ecr 0,nop,wscale 7], length 0
+23:05:42.476347 IP 192.168.100.11.38213 > hg-in-f91.1e100.net.https: Flags [S], seq 1004772833, win 14600, options [mss 1460,sackOK,TS val 173995787 ecr 0,nop,wscale 7], length 0
+23:05:42.756046 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1858, length 64
+23:05:42.756093 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1858, length 64
+23:05:42.884777 IP6 fe80::d3:3078:fcb7:2f2.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:43.758087 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1859, length 64
+23:05:43.758134 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1859, length 64
+23:05:44.759180 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1860, length 64
+23:05:44.759231 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1860, length 64
+23:05:45.761444 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1861, length 64
+23:05:45.761489 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1861, length 64
+23:05:46.762407 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1862, length 64
+23:05:46.762453 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1862, length 64
+23:05:46.884898 IP6 fe80::d3:3078:fcb7:2f2.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:47.764491 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1863, length 64
+23:05:47.764538 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1863, length 64
+23:05:48.765499 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1864, length 64
+23:05:48.765545 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1864, length 64
+23:05:48.858965 IP 192.168.100.85.netbios-dgm > 192.168.103.255.netbios-dgm: NBT UDP PACKET(138)
+23:05:49.766685 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1865, length 64
+23:05:49.766731 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1865, length 64
+23:05:50.767701 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1866, length 64
+23:05:50.767745 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1866, length 64
+23:05:51.768854 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1867, length 64
+23:05:51.768896 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1867, length 64
+23:05:52.770012 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1868, length 64
+23:05:52.770052 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1868, length 64
+23:05:53.771153 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1869, length 64
+23:05:53.771192 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1869, length 64
+23:05:54.772101 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1870, length 64
+23:05:54.772148 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1870, length 64
+23:05:54.885298 IP6 fe80::d3:3078:fcb7:2f2.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:05:54.953277 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 133
+23:05:54.953302 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 132
+23:05:54.953311 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 137
+23:05:54.953661 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 101
+23:05:54.953684 IP 192.168.100.84.ssdp > 239.255.255.250.ssdp: UDP, length 101
+23:05:55.774305 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1871, length 64
+23:05:55.774351 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1871, length 64
+23:05:56.775762 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1872, length 64
+23:05:56.775807 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1872, length 64
+23:05:57.617528 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [S], seq 2505649462, win 14600, options [mss 1460,sackOK,TS val 174010928 ecr 0,nop,wscale 7], length 0
+23:05:57.617725 IP 192.168.100.11.40528 > c.center-dns.jsinfo.net.domain: 58416+ PTR? 139.128.125.74.in-addr.arpa. (45)
+23:05:57.629284 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.40528: 58416 1/4/4 PTR hg-in-f139.1e100.net. (225)
+23:05:57.651683 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [S.], seq 2705288479, ack 2505649463, win 42900, options [mss 1380,nop,nop,sackOK,nop,wscale 6], length 0
+23:05:57.651729 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 1, win 115, length 0
+23:05:57.652411 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 1:363, ack 1, win 115, length 362
+23:05:57.686984 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [.], ack 363, win 665, length 0
+23:05:57.687011 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 1:170, ack 363, win 665, length 169
+23:05:57.687030 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 170, win 123, length 0
+23:05:57.687880 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 363:446, ack 170, win 123, length 83
+23:05:57.688383 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 446:499, ack 170, win 123, length 53
+23:05:57.688541 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 499:560, ack 170, win 123, length 61
+23:05:57.689022 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 560:959, ack 170, win 123, length 399
+23:05:57.723077 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 170:223, ack 446, win 664, length 53
+23:05:57.723109 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [.], ack 560, win 663, length 0
+23:05:57.723816 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 223:460, ack 959, win 661, length 237
+23:05:57.723846 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 460:1840, ack 959, win 661, length 1380
+23:05:57.723864 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 1840, win 153, length 0
+23:05:57.723876 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 1840:1882, ack 959, win 661, length 42
+23:05:57.725737 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 959:1108, ack 1882, win 153, length 149
+23:05:57.759270 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 1882:1951, ack 1108, win 661, length 69
+23:05:57.761374 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 1951:3331, ack 1108, win 661, length 1380
+23:05:57.761401 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 3331, win 174, length 0
+23:05:57.761418 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 3331:3911, ack 1108, win 661, length 580
+23:05:57.763024 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 1108:1259, ack 3911, win 196, length 151
+23:05:57.777000 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1873, length 64
+23:05:57.777034 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1873, length 64
+23:05:57.797360 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 3911:3964, ack 1259, win 661, length 53
+23:05:57.798975 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 3964:5344, ack 1259, win 661, length 1380
+23:05:57.799002 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 5344, win 218, length 0
+23:05:57.799018 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 5344:6724, ack 1259, win 661, length 1380
+23:05:57.799033 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 6724:7963, ack 1259, win 661, length 1239
+23:05:57.799047 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 7963, win 261, length 0
+23:05:57.800724 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 1259:1406, ack 7963, win 261, length 147
+23:05:57.835311 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 7963:8023, ack 1406, win 661, length 60
+23:05:57.835568 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 8023:9403, ack 1406, win 661, length 1380
+23:05:57.835595 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 9403, win 282, length 0
+23:05:57.835608 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 9403:9906, ack 1406, win 661, length 503
+23:05:57.837025 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [P.], seq 1406:1570, ack 9906, win 304, length 164
+23:05:57.868552 IP 192.168.100.11.58860 > hg-in-f102.1e100.net.https: Flags [S], seq 1854677268, win 14600, options [mss 1460,sackOK,TS val 174011179 ecr 0,nop,wscale 7], length 0
+23:05:57.868742 IP 192.168.100.11.57949 > c.center-dns.jsinfo.net.domain: 40397+ PTR? 102.128.125.74.in-addr.arpa. (45)
+23:05:57.871514 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 9906:9958, ack 1570, win 661, length 52
+23:05:57.871823 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 9958:11338, ack 1570, win 661, length 1380
+23:05:57.871842 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 11338, win 325, length 0
+23:05:57.872072 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 11338:12718, ack 1570, win 661, length 1380
+23:05:57.872088 IP hg-in-f139.1e100.net.https > 192.168.100.11.60946: Flags [P.], seq 12718:13845, ack 1570, win 661, length 1127
+23:05:57.872099 IP 192.168.100.11.60946 > hg-in-f139.1e100.net.https: Flags [.], ack 13845, win 368, length 0
+23:05:57.881322 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.57949: 40397 1/4/4 PTR hg-in-f102.1e100.net. (225)
+23:05:58.006105 IP hg-in-f102.1e100.net.https > 192.168.100.11.58860: Flags [S.], seq 3399653894, ack 1854677269, win 42900, options [mss 1380,nop,nop,sackOK,nop,wscale 6], length 0
+23:05:58.006146 IP 192.168.100.11.58860 > hg-in-f102.1e100.net.https: Flags [.], ack 1, win 115, length 0
+23:05:58.225352 IP 192.168.100.11.43537 > hg-in-f136.1e100.net.https: Flags [S], seq 2854258407, win 14600, options [mss 1460,sackOK,TS val 174011536 ecr 0,nop,wscale 7], length 0
+23:05:58.476378 IP 192.168.100.11.38213 > hg-in-f91.1e100.net.https: Flags [S], seq 1004772833, win 14600, options [mss 1460,sackOK,TS val 174011787 ecr 0,nop,wscale 7], length 0
+23:05:58.778064 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1874, length 64
+23:05:58.778110 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1874, length 64
+23:05:59.608419 IP 0.0.0.0 > all-systems.mcast.net: igmp query v2
+23:05:59.608421 IP6 9c00:2d00:1a04:ba03:ac:6639:188:ffff > ff02::1: HBH ICMP6, multicast listener querymax resp delay: 1000 addr: ::, length 24
+23:05:59.608627 IP 192.168.100.11.42733 > c.center-dns.jsinfo.net.domain: 41367+ PTR? 1.0.0.224.in-addr.arpa. (40)
+23:05:59.620305 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.42733: 41367 1/4/8 PTR all-systems.mcast.net. (338)
+23:05:59.620515 IP 192.168.100.11.40244 > c.center-dns.jsinfo.net.domain: 42338+ PTR? 0.0.0.0.in-addr.arpa. (38)
+23:05:59.630595 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.40244: 42338 NXDomain* 0/1/0 (73)
+23:05:59.630749 IP 192.168.100.11.36819 > c.center-dns.jsinfo.net.domain: 56394+ PTR? 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+23:05:59.640901 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.36819: 56394 ServFail 0/0/0 (90)
+23:05:59.640986 IP 192.168.100.11.45456 > a.center-dns.jsinfo.net.domain: 56394+ PTR? 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+23:05:59.649088 IP a.center-dns.jsinfo.net.domain > 192.168.100.11.45456: 56394 NXDomain 0/1/0 (160)
+23:05:59.649453 IP 192.168.100.11.55417 > c.center-dns.jsinfo.net.domain: 43574+ PTR? f.f.f.f.8.8.1.0.9.3.6.6.c.a.0.0.3.0.a.b.4.0.a.1.0.0.d.2.0.0.c.9.ip6.arpa. (90)
+23:05:59.779238 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1875, length 64
+23:05:59.779270 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1875, length 64
+23:05:59.975094 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.55417: 43574 NXDomain 0/1/0 (160)
+23:06:00.080192 IP 192.168.100.6 > 229.255.255.250: igmp v2 report 229.255.255.250
+23:06:00.080357 IP 192.168.100.11.42612 > c.center-dns.jsinfo.net.domain: 36083+ PTR? 250.255.255.229.in-addr.arpa. (46)
+23:06:00.314739 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.42612: 36083 NXDomain 0/1/0 (103)
+23:06:00.399464 IP 192.168.100.62 > 224.0.0.251: igmp v2 report 224.0.0.251
+23:06:00.399619 IP 192.168.100.11.57314 > c.center-dns.jsinfo.net.domain: 44542+ PTR? 251.0.0.224.in-addr.arpa. (42)
+23:06:00.410731 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.57314: 44542 NXDomain 0/1/0 (99)
+23:06:00.410872 IP 192.168.100.11.45060 > c.center-dns.jsinfo.net.domain: 59648+ PTR? 62.100.168.192.in-addr.arpa. (45)
+23:06:00.421814 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.45060: 59648 NXDomain* 0/1/0 (80)
+23:06:00.580195 IP 192.168.100.6 > 224.0.0.252: igmp v2 report 224.0.0.252
+23:06:00.662454 IP 192.168.100.84 > 239.255.255.250: igmp v2 report 239.255.255.250
+23:06:00.780430 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1876, length 64
+23:06:00.780471 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1876, length 64
+23:06:01.005629 IP 192.168.100.6.17500 > 255.255.255.255.17500: UDP, length 110
+23:06:01.008694 IP 192.168.100.6.17500 > 192.168.103.255.17500: UDP, length 110
+23:06:01.373639 IP 192.168.100.85 > 224.0.0.253: igmp v2 report 224.0.0.253
+23:06:01.782293 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1877, length 64
+23:06:01.782337 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1877, length 64
+23:06:02.784369 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1878, length 64
+23:06:02.784414 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1878, length 64
+23:06:03.043560 IP6 fe80::b9a3:b4a3:7a04:10b4.60074 > ff02::1:3.hostmon: UDP, length 22
+23:06:03.043802 IP 192.168.100.6.52693 > 224.0.0.252.hostmon: UDP, length 22
+23:06:03.043844 IP 192.168.100.11.39154 > c.center-dns.jsinfo.net.domain: 4502+ PTR? 4.b.0.1.4.0.a.7.3.a.4.b.3.a.9.b.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+23:06:03.050966 IP 192.168.100.6.bootpc > 255.255.255.255.bootps: BOOTP/DHCP, Request from 10:78:d2:a0:e5:4d (oui Unknown), length 300
+23:06:03.054488 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.39154: 4502 NXDomain* 0/1/0 (125)
+23:06:03.143315 IP6 fe80::b9a3:b4a3:7a04:10b4.60074 > ff02::1:3.hostmon: UDP, length 22
+23:06:03.143345 IP 192.168.100.6.52693 > 224.0.0.252.hostmon: UDP, length 22
+23:06:03.206189 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [P.], seq 1627:2169, ack 1237, win 1002, options [nop,nop,TS val 444026140 ecr 173980222], length 542
+23:06:03.206229 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [.], ack 2169, win 499, options [nop,nop,TS val 174016516 ecr 444026140], length 0
+23:06:03.257377 IP6 fe80::1151:8ec1:1d5a:2674.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:06:03.343810 IP 192.168.100.6.netbios-ns > 192.168.103.255.netbios-ns: NBT UDP PACKET(137): QUERY; REQUEST; BROADCAST
+23:06:03.460346 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 11072:11589, ack 26198, win 501, length 517
+23:06:03.460546 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 11589:11626, ack 26198, win 501, length 37
+23:06:03.460912 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], seq 11626:14386, ack 26198, win 501, length 2760
+23:06:03.460936 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 14386:14511, ack 26198, win 501, length 125
+23:06:03.461145 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [P.], seq 14511:14773, ack 26198, win 501, length 262
+23:06:03.578015 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 11589, win 1002, length 0
+23:06:03.578615 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 11626, win 1002, length 0
+23:06:03.578641 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 14511, win 957, length 0
+23:06:03.578658 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 26198:26235, ack 14511, win 1002, length 37
+23:06:03.578681 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 26235, win 501, length 0
+23:06:03.617823 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [.], ack 14773, win 1002, length 0
+23:06:03.636851 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 26235:26297, ack 14773, win 1002, length 62
+23:06:03.636879 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 26297, win 501, length 0
+23:06:03.637139 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 26297:27677, ack 14773, win 1002, length 1380
+23:06:03.637168 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 27677, win 499, length 0
+23:06:03.637181 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 27677:29057, ack 14773, win 1002, length 1380
+23:06:03.637198 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 29057, win 489, length 0
+23:06:03.637367 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 29057:30437, ack 14773, win 1002, length 1380
+23:06:03.637387 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 30437, win 479, length 0
+23:06:03.637396 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 30437:30503, ack 14773, win 1002, length 66
+23:06:03.637406 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 30503, win 479, length 0
+23:06:03.637690 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 30503:31883, ack 14773, win 1002, length 1380
+23:06:03.637716 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 31883, win 469, length 0
+23:06:03.637728 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 31883:33263, ack 14773, win 1002, length 1380
+23:06:03.637744 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 33263, win 459, length 0
+23:06:03.637754 IP kix01s01-in-f8.1e100.net.https > 192.168.100.11.41177: Flags [P.], seq 33263:34401, ack 14773, win 1002, length 1138
+23:06:03.637767 IP 192.168.100.11.41177 > kix01s01-in-f8.1e100.net.https: Flags [.], ack 34401, win 451, length 0
+23:06:03.720640 IP 192.168.100.11.48279 > tf-in-f125.1e100.net.xmpp-client: Flags [P.], seq 1237:1649, ack 2169, win 501, options [nop,nop,TS val 174017031 ecr 444026140], length 412
+23:06:03.785661 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1879, length 64
+23:06:03.785699 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1879, length 64
+23:06:03.872810 IP tf-in-f125.1e100.net.xmpp-client > 192.168.100.11.48279: Flags [.], ack 1649, win 1002, options [nop,nop,TS val 444026811 ecr 174017031], length 0
+23:06:04.074096 IP 192.168.100.12 > 224.0.1.178: igmp v2 report 224.0.1.178
+23:06:04.074253 IP 192.168.100.11.57273 > c.center-dns.jsinfo.net.domain: 48291+ PTR? 178.1.0.224.in-addr.arpa. (42)
+23:06:04.082877 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.57273: 48291 ServFail 0/0/0 (42)
+23:06:04.082970 IP 192.168.100.11.52462 > a.center-dns.jsinfo.net.domain: 48291+ PTR? 178.1.0.224.in-addr.arpa. (42)
+23:06:04.089872 IP a.center-dns.jsinfo.net.domain > 192.168.100.11.52462: 48291 NXDomain 0/1/0 (99)
+23:06:04.090004 IP 192.168.100.11.41019 > c.center-dns.jsinfo.net.domain: 62824+ PTR? 12.100.168.192.in-addr.arpa. (45)
+23:06:04.093712 IP 192.168.100.6.netbios-ns > 192.168.103.255.netbios-ns: NBT UDP PACKET(137): QUERY; REQUEST; BROADCAST
+23:06:04.101987 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.41019: 62824 NXDomain* 0/1/0 (80)
+23:06:04.786863 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1880, length 64
+23:06:04.786909 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1880, length 64
+23:06:04.843455 IP 192.168.100.6.netbios-ns > 192.168.103.255.netbios-ns: NBT UDP PACKET(137): QUERY; REQUEST; BROADCAST
+23:06:05.787943 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1881, length 64
+23:06:05.787990 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1881, length 64
+23:06:06.789112 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1882, length 64
+23:06:06.789155 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1882, length 64
+23:06:07.790302 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1883, length 64
+23:06:07.790350 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1883, length 64
+23:06:08.052026 IP hg-in-f102.1e100.net.https > 192.168.100.11.58860: Flags [F.], seq 1, ack 1, win 671, length 0
+23:06:08.052302 IP 192.168.100.11.58860 > hg-in-f102.1e100.net.https: Flags [.], ack 2, win 115, length 0
+23:06:08.785409 ARP, Request who-has 192.168.100.71 tell 192.168.100.11, length 28
+23:06:08.785692 ARP, Reply 192.168.100.71 is-at 52:54:00:59:ff:3e (oui Unknown), length 28
+23:06:08.791317 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1884, length 64
+23:06:08.791358 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1884, length 64
+23:06:08.815081 IP 192.168.100.11.58860 > hg-in-f102.1e100.net.https: Flags [F.], seq 1, ack 2, win 115, length 0
+23:06:08.853774 IP hg-in-f102.1e100.net.https > 192.168.100.11.58860: Flags [.], ack 2, win 671, length 0
+23:06:09.465286 IP6 fe80::b9a3:b4a3:7a04:10b4.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:06:09.793245 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1885, length 64
+23:06:09.793304 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1885, length 64
+23:06:10.465092 IP6 fe80::b9a3:b4a3:7a04:10b4.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:06:10.794432 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1886, length 64
+23:06:10.794477 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1886, length 64
+23:06:10.886240 IP6 fe80::d3:3078:fcb7:2f2.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:06:11.796337 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1887, length 64
+23:06:11.796383 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1887, length 64
+23:06:12.465120 IP6 fe80::b9a3:b4a3:7a04:10b4.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:06:12.797477 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1888, length 64
+23:06:12.797522 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1888, length 64
+23:06:13.799432 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1889, length 64
+23:06:13.799478 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1889, length 64
+23:06:14.800513 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1890, length 64
+23:06:14.800560 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1890, length 64
+23:06:15.743231 IP 192.168.100.6.5997 > 255.255.255.255.5998: UDP, length 12
+23:06:15.802499 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1891, length 64
+23:06:15.802536 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1891, length 64
+23:06:16.465443 IP6 fe80::b9a3:b4a3:7a04:10b4.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+23:06:16.803629 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1892, length 64
+23:06:16.803675 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1892, length 64
+23:06:17.805743 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1893, length 64
+23:06:17.805788 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1893, length 64
+23:06:18.806872 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1894, length 64
+23:06:18.806917 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1894, length 64
+23:06:19.808802 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1895, length 64
+23:06:19.808847 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1895, length 64
+23:06:20.809890 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1896, length 64
+23:06:20.809942 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1896, length 64
+23:06:21.601082 ARP, Request who-has 192.168.100.62 tell 192.168.101.42, length 46
+23:06:21.811031 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1897, length 64
+23:06:21.811074 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1897, length 64
+23:06:22.812116 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1898, length 64
+23:06:22.812161 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1898, length 64
+23:06:23.531754 IP6 fe80::21a:6bff:fe38:205c.mdns > ff02::fb.mdns: 0 PTR (QM)? 42.101.168.192.in-addr.arpa. (45)
+23:06:23.531822 IP 192.168.100.62.mdns > 224.0.0.251.mdns: 0 PTR (QM)? 42.101.168.192.in-addr.arpa. (45)
+23:06:23.532008 IP 192.168.100.11.33040 > c.center-dns.jsinfo.net.domain: 11101+ PTR? b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+23:06:23.542881 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.33040: 11101 NXDomain 0/1/0 (160)
+23:06:23.543021 IP 192.168.100.11.41432 > c.center-dns.jsinfo.net.domain: 35414+ PTR? c.5.0.2.8.3.e.f.f.f.b.6.a.1.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+23:06:23.553327 IP c.center-dns.jsinfo.net.domain > 192.168.100.11.41432: 35414 NXDomain* 0/1/0 (125)
+23:06:23.812364 IP 192.168.100.11.37835 > kix01s01-in-f7.1e100.net.http: Flags [.], ack 628, win 124, length 0
+23:06:23.814118 IP 192.168.100.71 > 192.168.100.11: ICMP echo request, id 21532, seq 1899, length 64
+23:06:23.814157 IP 192.168.100.11 > 192.168.100.71: ICMP echo reply, id 21532, seq 1899, length 64
+23:06:23.898970 IP kix01s01-in-f7.1e100.net.http > 192.168.100.11.37835: Flags [.], ack 450, win 1000, length 0
+23:06:24.070144 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length 133
+23:06:24.070170 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length 132
+23:06:24.070180 IP 192.168.100.85.ssdp > 239.255.255.250.ssdp: UDP, length

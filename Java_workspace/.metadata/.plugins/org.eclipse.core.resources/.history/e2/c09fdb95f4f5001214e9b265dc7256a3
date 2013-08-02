@@ -1,0 +1,86 @@
+import java.util.*;
+import java.io.*;
+import java.net.*;
+
+public class User {
+	public String username;
+	public String passwd;
+	public String server_ip = "localhost";
+	public int server_port = 8000;
+	
+	//模拟 协议中的sprinf（buff,%04d,len）
+	//注意TCP是big endian!所以高字节在低地址，即byte[0]要放最高位！
+	byte[] getMsgLenBytes(int len) throws Exception
+	{
+		if(len > 9999 || len <0)
+		{
+			System.out.println("Length should between 0,9999");
+			throw new Exception ("Length should between 0,9999");
+		}
+		
+		byte [] lenbyte = new byte[4];
+		for(int i= 3 ;i>=0;i--)
+		{
+			lenbyte[i] = (byte)(len%10 +'0');
+			System.out.println(lenbyte[i]);
+			len = len/10;
+		}
+		return lenbyte;
+	}
+	
+	public void sendInfo()
+	{
+		InetSocketAddress addr;
+		BufferedReader is = null;
+		OutputStream os = null;
+		Socket sock;
+		try{
+			addr = new InetSocketAddress(Inet4Address.getByName(server_ip),server_port); //创建socket
+			sock = new Socket();  
+			sock.connect(addr);//连接服务器
+			
+
+		
+
+			os = sock.getOutputStream(); //管道的写工具
+			is = new BufferedReader(new InputStreamReader(sock.getInputStream()));  //管道的读工具
+
+			//BufferedReader user = new BufferedReader(new InputStreamReader(System.in)); //从控制台读取命令的工具
+			
+			//System.out.print("client say:");
+			//String msg = user.readLine();
+			byte[] msgbuff ="LOGIN:USERNAME=test1,PASSWORD=123456".getBytes();
+			byte[] msglen = getMsgLenBytes(msgbuff.length);
+			os.write(msglen);
+			os.write(msgbuff);
+			os.flush();
+			String echo = is.readLine();
+			System.out.println(echo);
+//			while(!msg .equals("bye"))
+//			{
+//
+//				os.println(msg);
+//				os.flush();
+//				
+//				String echo = is.readLine();
+//				System.out.println(echo);
+//				
+//				System.out.print("client say:");
+//				msg = user.readLine();
+//			}	
+			os.close();
+			is.close();
+			sock.close();
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		User user = new User();
+		user.sendInfo();
+	}
+
+}
