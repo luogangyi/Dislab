@@ -1,6 +1,0 @@
-13:41:36 **** Incremental Build of configuration Default for project IAAS-LGY ****
-make all 
-make: *** 没有规则可以创建目标“all”。 停止。
-
-13:41:36 Build Finished (took 62ms)
-

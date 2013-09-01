@@ -1,7 +1,0 @@
-19:28:48 **** Incremental Build of configuration Default for project VMServer ****
-make 
-g++ -c -g StartVM.cpp -o StartVM.o
-g++ Config.o main.o Object.o Process.o UnknownCmd.o Log.o String.o CppMysql.o Login.o CreateVM.o StartVM.o CloseVM.o DeleteVM.o QueryVM.o GetVNCConsole.o XML.o  -lpthread -L/usr/lib64/mysql  -lmysqlclient -lvirt  -lmcheck -g    -o clc_VMServer
-19:29:00 **** Incremental Build of configuration Default for project VMServer ****
-make 
-make: “clc_VMServer”是最新的。
