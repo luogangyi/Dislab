@@ -1,0 +1,45 @@
+#ifndef _CLC_START_VM
+#define _CLC_START_VM
+
+#include "Object.h"
+
+class StartVM : public Object
+{
+public:
+	StartVM();
+	virtual ~StartVM();
+public:
+	virtual void Do();
+	void setUserName(String user);
+	bool getPara();
+	bool isVMExist(String VMID);
+	bool applyNC();	
+	bool groupApplyNC(String GroupID);
+	bool startVM(String VMID);
+	bool checkVMSatus(String VMID);
+	bool getNFSInfo();
+	bool updateDB();
+	bool isVMStarted(String VMID);
+
+	// add by lgy.
+	bool groupVMStart();
+	bool singleVMStart(String VMID);
+
+private:
+	String userName;
+	String vmName;
+	String vmID;
+	String groupID;
+	String bestNCIP;
+	String nfsIP;
+	String nfsDir;
+	
+	bool groupStartFlag;
+
+};
+
+
+
+
+#endif
+

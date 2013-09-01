@@ -1,0 +1,15 @@
+package lgy;
+
+import java.util.*;
+import java.sql.*;
+import java.net.*;
+
+
+public class Dispatcher {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

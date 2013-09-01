@@ -1,0 +1,17 @@
+package common;
+
+public class DatabaseManager {
+
+	private static String config_file_name = "clccfg.cfg";
+
+	private static String db_address;
+	private static String db_user_name;
+	private static String db_user_pass;
+	private static String db_name;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

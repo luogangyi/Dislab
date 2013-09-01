@@ -1,0 +1,247 @@
+package lgy;
+
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.sql.*;
+
+import common.*;
+import architecture.*;
+/**
+ * 通过数据库中的NC数据构建整个数据中心的结构
+ * @author lgy
+ *
+ */
+public class DatacenterBulider {
+	
+	public static Log log;
+	//必须先初始化！！
+	public static void init(Log l)
+	{
+		log = l;
+	}
+	public static void initiateDataCenter(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		//初始化机架组，并将其添加至数据中心中
+		initiateGroup(datacenter_id, datacenter);
+		//初始化机架，并将其添加至机架组中
+		initiateRack(datacenter_id, datacenter);
+		//初始化物理机，并将其添加至机架中
+		initiateNC(datacenter_id, datacenter);
+	}
+	
+	private static void initiateGroup(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		
+		String sql="select * from RackGroup ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+
+            int group_id;
+            int group_status;
+            while(rs.next()) {
+    
+            	group_id = rs.getInt("RackGroupID");
+            	group_status = rs.getInt("Status");
+            	
+            	RackGroup g = new RackGroup(group_id,datacenter_id,datacenter,group_status);
+            	datacenter.addGroup(g);
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	private static boolean initiateRack(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		
+		String sql="select * from Rack ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            String temp = null;
+            int rack_id;
+            int group_id;
+            int rack_status;
+            while(rs.next()) {
+    
+            	rack_id = rs.getInt("RackID");
+            	group_id = rs.getInt("RackGroupID");
+            	rack_status = rs.getInt("Status");
+            	
+            	RackGroup g = datacenter.group_map.get(group_id);
+            	if(g == null)
+            	{
+            		System.out.println("Error RackGroupID of NC!");
+            		log.write("Error RackGroupID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Rack r = new Rack(rack_id,group_id,datacenter_id,g,datacenter,rack_status);
+            	g.addRack(r);
+
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return true;
+	}
+	
+	private static boolean initiateNC(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		
+		String sql="select * from NC ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+
+            int nc_id;
+            int rack_id;
+            int group_id;
+            int nc_status;
+            String time;
+            String IP;
+            int cpu;
+            int mem;
+            int cpu_used;
+            int mem_used;
+            String virtType;
+            String update_at;
+            
+            while(rs.next()) {
+    
+            	nc_id = rs.getInt("NCID");
+            	rack_id = rs.getInt("RackID");
+            	group_id = rs.getInt("RackGroupID");
+            	nc_status = rs.getInt("Status");
+            	
+            	time = rs.getString("TIME");
+            	IP = rs.getString("IP");
+            	cpu = rs.getInt("CPU");
+            	mem = rs.getInt("RAM");
+            	
+            	cpu_used = rs.getInt("CPU");
+            	mem_used = rs.getInt("MEMORY_USED");
+            	
+            	virtType = rs.getString("VirtType");
+            	update_at = rs.getString("UPDATE_AT");
+            	RackGroup g = datacenter.group_map.get(group_id);
+            	if(g == null)
+            	{
+            		System.out.println("Error RackGroupID of NC!");
+            		log.write("Error RackGroupID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Rack r = g.rack_map.get(rack_id);
+            	if(r == null)
+            	{
+            		System.out.println("Error RackID of NC!");
+            		log.write("Error RackID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	
+            	Node n = new Node(cpu,mem,IP,nc_id,rack_id,group_id,datacenter_id,r,g,datacenter,nc_status,update_at);
+            
+            	n.requireCpu(cpu_used);
+            	n.requireMem(mem_used);
+            
+            	r.addNC(n);
+            	return true;
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return true;
+	}
+	
+	private static boolean updateNC(DataCenter datacenter) throws Exception
+	{
+		
+		String sql="select * from NC ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+
+            int nc_id;
+            int rack_id;
+            int group_id;
+            int nc_status;
+            String time;
+            String IP;
+            int cpu;
+            int mem;
+            int cpu_used;
+            int mem_used;
+            String virtType;
+            String update_at;
+            
+            while(rs.next()) {
+    
+            	nc_id = rs.getInt("NCID");
+            	rack_id = rs.getInt("RackID");
+            	group_id = rs.getInt("RackGroupID");
+            	nc_status = rs.getInt("Status");
+            	
+            	time = rs.getString("TIME");
+            	IP = rs.getString("IP");
+            	cpu = rs.getInt("CPU");
+            	mem = rs.getInt("RAM");
+            	
+            	cpu_used = rs.getInt("CPU");
+            	mem_used = rs.getInt("MEMORY_USED");
+            	
+            	virtType = rs.getString("VirtType");
+            	update_at = rs.getString("UPDATE_AT");
+            	RackGroup g = datacenter.group_map.get(group_id);
+            	if(g == null)
+            	{
+            		System.out.println("Error RackGroupID of NC!");
+            		log.write("Error RackGroupID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Rack r = g.rack_map.get(rack_id);
+            	if(r == null)
+            	{
+            		System.out.println("Error RackID of NC!");
+            		log.write("Error RackID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Node n = new Node(cpu,mem,IP,nc_id,rack_id,group_id,datacenter_id,r,g,datacenter,nc_status,update_at);
+            
+            	n.requireCpu(cpu_used);
+            	n.requireMem(mem_used);
+            
+            	r.addNC(n);
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

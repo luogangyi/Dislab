@@ -159,7 +159,7 @@ void StartVM::Do()
 {
 	log.write("in StartVM::Do", Log::INFO);
 
-	//²ÎÊı¼ì²é
+	//å‚æ•°æ£€æŸ¥
 	if( getPara() == false)
 	{
 		ackCode =  "ACK:START VM:RETN=4,DESC=VM ID error";
@@ -172,7 +172,7 @@ void StartVM::Do()
 		return;
 	}
 	
-	//¼ì²éĞéÄâ»úÊÇ·ñÒÑÆô¶¯
+	//æ£€æŸ¥è™šæ‹Ÿæœºæ˜¯å¦å·²å¯åŠ¨
 	int iRet = isAlreadyStart();
 	if( iRet == 1)
 	{
@@ -186,7 +186,7 @@ void StartVM::Do()
 	}
 	
 	
-	//¹ÒÔØNFS
+	//æŒ‚è½½NFS
 	iRet = mountNFS();
 	if( iRet == 1)
 	{
@@ -207,12 +207,12 @@ void StartVM::Do()
 }
 
 
-//¹ÒÔØNFS·şÎñÆ÷ÉÏµÄÄ¿Â¼
-//·µ»ØÖµ£º0-³É¹¦1-Ê§°Ü
+//æŒ‚è½½NFSæœåŠ¡å™¨ä¸Šçš„ç›®å½•
+//è¿”å›å€¼ï¼š0-æˆåŠŸ1-å¤±è´¥
 int StartVM::mountNFS()
 {
 	////////////
-	//¶Ô´«ÈëµÄ²ÎÊıdir½øĞĞ´¦Àí£¬½«'/'Ìæ»»³É'-'
+	//å¯¹ä¼ å…¥çš„å‚æ•°dirè¿›è¡Œå¤„ç†ï¼Œå°†'/'æ›¿æ¢æˆ'-'
 	char dirName[1024];
 	memset(dirName, 0, sizeof(dirName));
 	strcpy(dirName, nfsDir.c_str());
@@ -333,7 +333,7 @@ bool StartVM::getPara()
 	
 	map<string,string>::iterator it;
 
-	//»ñÈ¡NFS·şÎñÆ÷IPµØÖ·ĞÅÏ¢
+	//è·å–NFSæœåŠ¡å™¨IPåœ°å€ä¿¡æ¯
 	it = paraMap.find("vmid");
 	if( it == paraMap.end() )
 	{
@@ -376,7 +376,7 @@ bool StartVM::getVMInfoFromDB()
 	nfsIP = query.getStringField("IP");
 	nfsDir = query.getStringField("DIR");
 
-	//»ñÈ¡ĞéÄâ»úÃû³Æ
+	//è·å–è™šæ‹Ÿæœºåç§°
 	sql = "select vmname,ram,vcpu,virttype,uuid from VMDetail where id=" + vmID;
 	if( executeDBQuery( sql, query) == false )
 		return false;
@@ -393,7 +393,7 @@ bool StartVM::getVMInfoFromDB()
 	vmUUID = query.getStringField("uuid");
 
 
-	//»ñÈ¡ĞéÄâ»úÍø¿¨µØÖ·
+	//è·å–è™šæ‹Ÿæœºç½‘å¡åœ°å€
 	sql = "select mac,ip from MACIP where vmid=" + vmID;
 	if( executeDBQuery( sql, query) == false )
 		return false;

@@ -1,0 +1,50 @@
+2013/07/28 01:36:51 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/07/28 01:36:51 Sunday [INFO] receive cmd GET BEST NC:VMID=1 and return a Dispatch object.
+2013/07/28 01:36:51 Sunday [INFO] use para vmid=1 to init the Dispatch object.
+2013/07/28 01:36:51 Sunday [INFO] begin call obj->Do.
+2013/07/28 01:36:51 Sunday [INFO] in Dispatch::Do
+2013/07/28 01:36:51 Sunday [INFO] call obj->Do down.
+2013/07/28 01:36:51 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 01:36:51 Sunday [INFO] send ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11
+2013/07/28 01:36:51 Sunday [INFO] call obj->sendAck down.
+2013/07/28 01:36:51 Sunday [ERROR] in threadFunc,call recv to receive message size error.
+2013/07/28 02:02:59 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/07/28 02:02:59 Sunday [INFO] receive cmd GET BEST NC:VMID=1 and return a Dispatch object.
+2013/07/28 02:02:59 Sunday [INFO] use para vmid=1 to init the Dispatch object.
+2013/07/28 02:02:59 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:02:59 Sunday [INFO] in Dispatch::Do
+2013/07/28 02:02:59 Sunday [INFO] call obj->Do down.
+2013/07/28 02:02:59 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:02:59 Sunday [INFO] send ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11
+2013/07/28 02:02:59 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:02:59 Sunday [ERROR] in threadFunc,call recv to receive message size error.
+2013/07/28 02:16:56 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/07/28 02:16:56 Sunday [INFO] receive cmd GET BEST NC:VMID=1 and return a Dispatch object.
+2013/07/28 02:16:56 Sunday [INFO] use para vmid=1 to init the Dispatch object.
+2013/07/28 02:16:56 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:16:56 Sunday [INFO] in Dispatch::Do
+2013/07/28 02:16:56 Sunday [INFO] call obj->Do down.
+2013/07/28 02:16:56 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:16:56 Sunday [INFO] send ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11
+2013/07/28 02:16:56 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:16:56 Sunday [ERROR] in threadFunc,call recv to receive message size error.
+2013/07/28 02:29:07 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/07/28 02:29:07 Sunday [INFO] receive cmd GET BEST NC:VMID=1 and return a Dispatch object.
+2013/07/28 02:29:07 Sunday [INFO] use para vmid=1 to init the Dispatch object.
+2013/07/28 02:29:07 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:29:07 Sunday [INFO] in Dispatch::Do
+2013/07/28 02:29:07 Sunday [INFO] call obj->Do down.
+2013/07/28 02:29:07 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:29:07 Sunday [INFO] send ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11
+2013/07/28 02:29:07 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:29:07 Sunday [ERROR] in threadFunc,call recv to receive message size error.
+2013/07/28 02:31:02 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/07/28 02:31:02 Sunday [INFO] receive cmd GET BEST NC:VMID=1 and return a Dispatch object.
+2013/07/28 02:31:02 Sunday [INFO] use para vmid=1 to init the Dispatch object.
+2013/07/28 02:31:02 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:31:02 Sunday [INFO] in Dispatch::Do
+2013/07/28 02:31:02 Sunday [INFO] call obj->Do down.
+2013/07/28 02:31:02 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:31:02 Sunday [INFO] send ack message:ACK:GET BEST NC:RETN=0,DESC=success,IP=192.168.101.11
+2013/07/28 02:31:02 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:31:02 Sunday [ERROR] in threadFunc,call recv to receive message size error.

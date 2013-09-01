@@ -1,0 +1,323 @@
+package lgy;
+
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.sql.*;
+
+import model.*;
+import common.*;
+import architecture.*;
+/**
+ * 通过数据库中的NC数据构建整个数据中心的结构
+ * @author lgy
+ *
+ */
+public class DatacenterBuilder {
+	
+	protected static DataCenter datacenter;
+	public static int datacenter_id;
+	public static Log log;
+	//必须先初始化！！
+	public static void init(Log log)
+	{
+		DatacenterBuilder.log = log;
+		DatacenterBuilder.datacenter_id = 0;
+		DatacenterBuilder.datacenter = new DataCenter();
+	}
+	public static void initiateDataCenter() throws Exception
+	{
+		//初始化机架组，并将其添加至数据中心中
+		initiateGroup();
+		//初始化机架，并将其添加至机架组中
+		initiateRack();
+		//初始化物理机，并将其添加至机架中
+		initiateNC();
+	}
+	
+	private static boolean initiateGroup() throws Exception
+	{
+		
+		String sql="select * from RackGroup ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+
+            int group_id;
+            int group_status;
+            while(rs.next()) {
+    
+            	group_id = rs.getInt("RackGroupID");
+            	group_status = rs.getInt("Status");
+            	
+            	RackGroup g = new RackGroup(group_id,datacenter_id,datacenter,group_status);
+            	datacenter.addGroup(g);
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	
+	private static boolean initiateRack() throws Exception
+	{
+		
+		String sql="select * from Rack ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            String temp = null;
+            int rack_id;
+            int group_id;
+            int rack_status;
+            while(rs.next()) {
+    
+            	rack_id = rs.getInt("RackID");
+            	group_id = rs.getInt("RackGroupID");
+            	rack_status = rs.getInt("Status");
+            	
+            	RackGroup g = datacenter.group_map.get(group_id);
+            	if(g == null)
+            	{
+            		System.out.println("Error RackGroupID of NC!");
+            		log.write("Error RackGroupID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Rack r = new Rack(rack_id,group_id,datacenter_id,g,datacenter,rack_status);
+            	g.addRack(r);
+
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return true;
+	}
+	
+	private static boolean initiateNC() throws Exception
+	{
+		
+		String sql="select * from NC ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+
+            int nc_id;
+            int rack_id;
+            int group_id;
+            int nc_status;
+            String time;
+            String IP;
+            int cpu;
+            int mem;
+            int cpu_used;
+            int mem_used;
+            String virtType;
+            String update_at;
+            
+            while(rs.next()) {
+    
+            	nc_id = rs.getInt("NCID");
+            	rack_id = rs.getInt("RackID");
+            	group_id = rs.getInt("RackGroupID");
+            	nc_status = rs.getInt("Status");
+            	
+            	time = rs.getString("TIME");
+            	IP = rs.getString("IP");
+            	cpu = rs.getInt("CPU");
+            	mem = rs.getInt("RAM");
+            	
+            	cpu_used = rs.getInt("CPU");
+            	mem_used = rs.getInt("MEMORY_USED");
+            	
+            	virtType = rs.getString("VirtType");
+            	update_at = rs.getString("UPDATE_AT");
+            	RackGroup g = datacenter.group_map.get(group_id);
+            	if(g == null)
+            	{
+            		System.out.println("Error RackGroupID of NC!");
+            		log.write("Error RackGroupID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Rack r = g.rack_map.get(rack_id);
+            	if(r == null)
+            	{
+            		System.out.println("Error RackID of NC!");
+            		log.write("Error RackID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	
+            	Node n = new Node(cpu,mem,IP,nc_id,rack_id,group_id,datacenter_id,r,g,datacenter,nc_status,update_at);
+            
+            	n.requireCpu(cpu_used);
+            	n.requireMem(mem_used);
+            
+            	r.addNC(n);
+            	return true;
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return true;
+	}
+	
+	public static boolean updateNC() throws Exception
+	{
+		
+		String sql="select * from NC ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+
+            int nc_id;
+            int rack_id;
+            int group_id;
+            int nc_status;
+            String time;
+            String IP;
+            int cpu;
+            int mem;
+            int cpu_used;
+            int mem_used;
+            String virtType;
+            String update_at;
+            
+            while(rs.next()) {
+    
+            	nc_id = rs.getInt("NCID");
+            	rack_id = rs.getInt("RackID");
+            	group_id = rs.getInt("RackGroupID");
+            	nc_status = rs.getInt("Status");
+            	
+            	time = rs.getString("TIME");
+            	IP = rs.getString("IP");
+            	cpu = rs.getInt("CPU");
+            	mem = rs.getInt("RAM");
+            	
+            	cpu_used = rs.getInt("CPU");
+            	mem_used = rs.getInt("MEMORY_USED");
+            	
+            	virtType = rs.getString("VirtType");
+            	update_at = rs.getString("UPDATE_AT");
+            	RackGroup g = datacenter.group_map.get(group_id);
+            	if(g == null)
+            	{
+            		System.out.println("Error RackGroupID of NC!");
+            		log.write("Error RackGroupID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Rack r = g.rack_map.get(rack_id);
+            	if(r == null)
+            	{
+            		System.out.println("Error RackID of NC!");
+            		log.write("Error RackID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	Node n = r.node_map.get(nc_id);
+            	if(n == null)
+            	{
+            		System.out.println("Error NCID of NC!");
+            		log.write("Error NCID of NC!", TYPE.ERROR);
+            		return false;
+            	}
+            	//Node n = new Node(cpu,mem,IP,nc_id,rack_id,group_id,datacenter_id,r,g,datacenter,nc_status,update_at);
+            	//更新
+            	n.setCpu_left(cpu-cpu_used);
+            	n.setMem_left(mem-mem_used);
+            	n.setStatus(nc_status);
+            	
+            	//更新NC节点上的虚拟机信息
+            	updateVMOfNC(n);
+
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	//更新NC上的所有VM
+	public static void updateVMOfNC(Node n)
+	{
+		//从数据库中获取最新的虚拟机列表
+		List<VMDetail> list =getVMDetailList(n.node_id);
+		n.removeAllVM();
+		for(VMDetail vmd:list)
+		{
+			VM vm =new 	VM(vmd.getVCPU(), vmd.getRAM(), vmd.getUSERID(), vmd.getGroupInnerID());
+			vm.setNode(n);
+			n.addVM(vm);
+		}
+	}
+	
+	//获取某个NC上运行的所有虚l拟机
+	private static List<VMDetail> getVMDetailList(int nc_id)
+	{
+		String sql = "select * from VMDetail where Status=1 and Host=(select IP from NC where NCID="+nc_id+")";
+		List<VMDetail> vm_list = new LinkedList<VMDetail>();
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+			Statement statement = conn.createStatement();
+			ResultSet rs = statement.executeQuery(sql);
+			while(rs.next())
+			{
+				//| ID | VMNAME| OS| DISK | RAM | VCPU | USERID | DiskType | IsParaVirt | 
+				//IsAutoScaling | VirtType | UUID  | Status | Host | GroupID | GroupInnerID |
+
+				VMDetail vmd = new VMDetail();
+				vmd.setID(rs.getInt("ID"));
+				vmd.setVMNAME(rs.getString("VMName"));
+				vmd.setOS(rs.getString("OS"));
+				vmd.setDISK(rs.getInt("DISK"));
+				vmd.setRAM(rs.getInt("RAM"));
+				vmd.setVCPU(rs.getInt("VCPU"));
+				vmd.setUSERID(rs.getInt("USERID"));
+				vmd.setDiskType(rs.getInt("DiskType"));
+				vmd.setIsParaVirt(rs.getInt("IsParaVirt"));
+				vmd.setIsAutoScaling(rs.getInt("IsAutoScaling"));
+				vmd.setVirtType(rs.getString("VirtType"));
+				vmd.setUUID(rs.getString("UUID"));
+				vmd.setStatus(rs.getInt("Status"));
+				vmd.setHostIP(rs.getString("Host"));
+				vmd.setGroupID(rs.getInt("GroupID"));
+				vmd.setGroupInnerID(rs.getInt("GroupInnerID"));
+				
+				vm_list.add(vmd);
+			}
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			log.write("Error in get VMDetail list from Datebase.", TYPE.ERROR);
+			return null;
+		}
+		return vm_list;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package lgy;
+
+import java.util.*;
+import java.sql.*;
+import java.net.*;
+
+import common.Log;
+
+public class Dispatcher {
+
+	private String config_file_name = "clccfg.cfg";
+	private String dispatch_server_port;
+	private Log log;
+	
+	/**
+	 * 初始化，初始化失败，则返回false
+	 * @return
+	 */
+	public boolean init()
+	{
+		
+	}
+	
+	public void readConfigFile()
+	{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,174 @@
+package lgy;
+
+import java.io.*;
+import java.util.*;
+import java.util.concurrent.Executors;
+import java.net.*;
+
+import common.Log;
+import common.TYPE;
+public class DispatcherAlgorithm  implements Runnable{
+
+	
+	private static String config_file_name = "clccfg.cfg";
+
+	private static String db_address;
+	private static String db_user_name;
+	private static String db_user_pass;
+	private static String db_name;
+	private static Map<String,String> config_map;
+	private static Log log;
+	private Socket client_socket;
+	
+	
+	public DispatcherAlgorithm(Socket clientSocket)
+	{
+		client_socket = clientSocket;
+	}
+	
+	/**
+	 * 初始化，初始化失败，则返回false
+	 * @return
+	 */
+	public static boolean init() throws Exception
+	{
+		log = new Log("clc_Dispatch_lgy.log");
+		
+		//读配置文件
+		readConfigFile();
+		
+		
+		if(!config_map.containsKey("DBServerAddr".toLowerCase()))
+		{
+			System.out.println("Initiate db_address Failed!");
+			return false;
+		}
+		else
+		{	
+			db_address = config_map.get("DBServerAddr".toLowerCase());
+		}
+		
+		
+		if(!config_map.containsKey("DBUserName".toLowerCase()))
+		{
+			System.out.println("Initiate db_user_name Failed!");
+			return false;
+		}
+		else
+		{	
+			db_user_name = config_map.get("DBUserName".toLowerCase());
+		}
+		
+		if(!config_map.containsKey("DBUserPass".toLowerCase()))
+		{
+			System.out.println("Initiate db_user_pass Failed!");
+			return false;
+		}
+		else
+		{	
+			db_user_pass = config_map.get("DBUserPass".toLowerCase());
+		}
+		
+		
+		if(!config_map.containsKey("DBName".toLowerCase()))
+		{
+			System.out.println("Initiate db_name Failed!");
+			return false;
+		}
+		else
+		{	
+			db_name = config_map.get("DBName".toLowerCase());
+		}
+		
+		
+		return true;
+		
+	}
+	
+	public static void readConfigFile() throws Exception
+	{
+		config_map = new HashMap<String,String>();
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(config_file_name)));
+		String line = null;
+		String [] key_value;
+		while((line = br.readLine())!=null)
+		{
+			if(line.startsWith("#"))//跳过注释行
+				continue;
+			
+			key_value = line.split("=");
+			
+			if(key_value.length != 2)
+				continue;
+			
+			//key 全部转化为小写
+			config_map.put(key_value[0].toLowerCase(), key_value[1]);		
+		}
+		br.close();
+	}
+	//将 "0021" 转化成 int 型的 21
+	private int convertRecLen(String s_len)
+	{
+		String result="";
+		boolean begin = false;
+		char [] arr = s_len.toCharArray();
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]!='0')
+			{
+				result += arr[i];
+				begin = true;
+			}
+				continue;
+			else
+				result += arr[i];
+		}
+		if(result != "")
+		{
+			int  len = Integer.parseInt(result);
+			return len;
+		}
+		return -1;
+	}
+	
+	public void run()
+	{
+		byte[] len_buff = new byte[512];  
+		byte[] cmd_buff = new byte[512];
+		int offset;
+		try{
+			InputStream in = client_socket.getInputStream();
+			OutputStream out = client_socket.getOutputStream();
+			
+			offset = in.read(len_buff,0,4);
+			len_buff[4]='\0';
+			int cmd_len = convertRecLen(new String(len_buff));
+		
+			System.out.println("Cmd length: " + new String(len_buff));
+			offset = in.read(cmd_buff,0,512);
+			
+			if(offset!=cmd_len)
+			{
+				System.out.println("Error In Reading Socket Data!");
+				return;
+			}
+			
+			cmd_buff[offset]='\0';
+			System.out.println(new String(cmd_buff));
+			
+			
+		}catch(Exception e)
+		{
+			//log.write("Error In Socket!", TYPE.ERROR);
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

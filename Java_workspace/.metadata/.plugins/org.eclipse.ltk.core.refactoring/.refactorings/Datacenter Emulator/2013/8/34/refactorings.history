@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 6 elements to &apos;Dispatcher/src/architecture&apos;&#x0A;- Original project: &apos;Datacenter Emulator&apos;&#x0A;- Destination element: &apos;Dispatcher/src/architecture&apos;&#x0A;- Original elements:&#x0A;     lgy.Rack.java&#x0A;     lgy.Job.java&#x0A;     lgy.VM.java&#x0A;     lgy.DataCenter.java&#x0A;     lgy.Group.java&#x0A;     lgy.Node.java" description="Copy compilation units" destination="=Dispatcher/src&lt;architecture" element1="/src&lt;lgy{Rack.java" element2="/src&lt;lgy{Job.java" element3="/src&lt;lgy{VM.java" element4="/src&lt;lgy{DataCenter.java" element5="/src&lt;lgy{Group.java" element6="/src&lt;lgy{Node.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1377252129997" units="6" version="1.0"/>
+</session>

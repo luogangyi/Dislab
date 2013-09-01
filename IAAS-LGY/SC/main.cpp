@@ -13,10 +13,24 @@
 #include"../common/Config.h"
 using namespace std;
 Log log;
-int main(){
+int main(int argc, char* argv[])
+{
+
+
+	char* pos = NULL;
+	pos = strrchr(argv[0],'/');	
+	if( pos != NULL )
+	{
+		pos++;
+		log.Init(pos);
+	}
+	else 
+		log.Init(argv[0]);	
+
 	int port;
 	ConfigFile::strFileName = "scfg.cfg";
 	bool i = ConfigFile::getIntValue("Port",port);
+
 	if(!i){
 		cout<<"get port failed!";
 		exit(-1);
@@ -25,7 +39,7 @@ int main(){
 	re->receiver();
 
 
-return 1;
+	return 1;
 }
 /*ADD NFS SP:IP=,DIR=,CAPACITY=    ACK: ADD NFS SP:RETN=,DESC=
  *     RMV NFS SP: IP=,DIR=,      ACK: RMV NFS SP:RETN=,DESC=

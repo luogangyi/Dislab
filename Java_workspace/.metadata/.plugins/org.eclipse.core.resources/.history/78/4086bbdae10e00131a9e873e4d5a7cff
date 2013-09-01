@@ -1,0 +1,68 @@
+package lgy;
+
+import java.util.*;
+
+import model.*;
+import architecture.*;
+
+public class FirstFit {
+
+	String findBestNC(VMDetail vmd)
+	{
+		try{
+			DatacenterBuilder.updateNC();
+			DataCenter datacenter =DatacenterBuilder.getDataCenter();
+			
+			//System.out.println("searching..");
+			for(Group g:datacenter.group_map.values())
+			{
+				for(Rack r:g.rack_list)
+				{
+					for(Node n:r.node_list)
+					{
+						if(n.getStatus()==false)
+						{
+							if(datacenter.total_cpu_rate>threshold||datacenter.total_mem_rate>threshold||datacenter.getTotal_mem_left()<10240||datacenter.getTotal_cpu_left()<10)
+								n.setStatus(true);
+							else
+								continue;
+						}
+						//System.out.println(n.cpu_left+"\t"+n.mem_left+"\n");
+						if(n.getCpu_left()>=vm.req_cpu && n.getMem_left() >= vm.req_mem)
+						{
+							//System.out.println(n.cpu_left+"\t"+n.mem_left+"\n");
+							n.requireCpu(vm.req_cpu);
+							n.requireMem(vm.req_mem);
+
+							vm.node = n;
+							
+							if(max_node==null)
+								max_node = n;
+							else if(max_node.node_id<n.node_id)
+								max_node = n;
+							//put this VM into the node's vm_list!
+							n.addVM(vm);
+							
+							//if(g.group_id>8)
+							//System.out.println("VM "+vm.vm_id+" is located on: Group "+g.group_id+" Rack "
+							//		+r.rack_id+" Node "+n.node_id);
+							return true;
+						}
+					}
+				}
+			}
+			return false;
+			
+		}
+		catch(Exception e)
+		{
+			
+		}
+		return "";
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

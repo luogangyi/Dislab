@@ -1,0 +1,82 @@
+package lgy;
+
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.sql.*;
+
+import common.*;
+import architecture.*;
+/**
+ * 通过数据库中的NC数据构建整个数据中心的结构
+ * @author lgy
+ *
+ */
+public class DatacenterBulider {
+	
+	static void initiateDataCenter(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		
+		String sql="select * from RackGroup ";
+		List<Integer> rackGrouplist = new LinkedList<Integer>();
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            String temp = null;
+            int group_id;
+            int group_status;
+            while(rs.next()) {
+    
+             // 选择sname这列数据
+            	group_id = rs.getInt("RackGroupID");
+            	group_status = rs.getInt("status");
+            	
+            	RackGroup g = new RackGroup(group_id,datacenter_id,datacenter);
+            }
+            return group_id_list;
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+			//出错，则返回空列表
+			return group_id_list;
+		}
+		
+		
+		
+		
+		String temp_line;
+		String []info;
+		BufferedReader br = new  BufferedReader(
+				new FileReader("emulational_datacenter_architecture.swf"));
+			
+		temp_line = br.readLine();
+		while(temp_line != null)
+		{
+			if(!temp_line.startsWith(";"))
+			{
+				System.out.println("#"+temp_line);
+				info = temp_line.split("\\s+");
+				
+				RackGroup g = new RackGroup(info,datacenter_id,datacenter);
+				datacenter.addGroup(g);
+				/**********for test***************
+				for(int i=0;i<info.length;i++)
+				{
+					System.out.print(info[i]+"#");
+				}
+				System.out.println();
+				***********************************/
+			}
+			temp_line = br.readLine();
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

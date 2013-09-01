@@ -1,0 +1,179 @@
+package lgy;
+
+import java.util.*;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+import java.sql.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.net.*;
+
+import architecture.DataCenter;
+import common.Log;
+
+/**
+ * 
+ * @author lgy
+ *
+ */
+public class DispatcherServer {
+
+	private String config_file_name = "clccfg.cfg";
+	private int dispatch_server_port;
+	private String db_address;
+	private String db_user_name;
+	private String db_user_pass;
+	private String db_name;
+	private Map<String,String> config_map;
+	private Log log;
+	
+	private Executor executor;
+	
+	public DispatcherServer()
+	{
+		try{
+			//初始化日志类
+			log = new Log("clc_Dispatch_lgy.log");
+			//初始化数据中心结构
+			DataCenter datacenter = new DataCenter();
+			
+			DatacenterBulider.init(log);
+			//从数据库中获取数据，构建数据库
+			DatacenterBulider.initiateDataCenter(0, datacenter);
+			
+			if(init()==false)
+			{
+				System.out.println("Initiation Failed!");
+				return;
+			}
+			
+			if(DispatcherController.init()==false)
+			{
+				System.out.println("DispatcherAlgorithm Initiation Failed!");
+				return;
+			}
+			//开始监听
+			startListen();
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+	
+	/**
+	 * 初始化，初始化失败，则返回false
+	 * @return
+	 */
+	public boolean init() throws Exception
+	{
+		//log = new Log("clc_Dispatch_lgy.log");
+		
+		//读配置文件
+		readConfigFile();
+		
+		if(!config_map.containsKey("DispatchServerPort".toLowerCase()))
+		{
+			System.out.println("Initiate dispatch_server_port Failed!");
+			return false;
+		}
+		else
+		{	
+			dispatch_server_port = Integer.parseInt(config_map.get("DispatchServerPort".toLowerCase()));
+		}
+		
+		if(!config_map.containsKey("DBServerAddr".toLowerCase()))
+		{
+			System.out.println("Initiate db_address Failed!");
+			return false;
+		}
+		else
+		{	
+			db_address = config_map.get("DBServerAddr".toLowerCase());
+		}
+		
+		
+		if(!config_map.containsKey("DBUserName".toLowerCase()))
+		{
+			System.out.println("Initiate db_user_name Failed!");
+			return false;
+		}
+		else
+		{	
+			db_user_name = config_map.get("DBUserName".toLowerCase());
+		}
+		
+		if(!config_map.containsKey("DBUserPass".toLowerCase()))
+		{
+			System.out.println("Initiate db_user_pass Failed!");
+			return false;
+		}
+		else
+		{	
+			db_user_pass = config_map.get("DBUserPass".toLowerCase());
+		}
+		
+		
+		if(!config_map.containsKey("DBName".toLowerCase()))
+		{
+			System.out.println("Initiate db_name Failed!");
+			return false;
+		}
+		else
+		{	
+			db_name = config_map.get("DBName".toLowerCase());
+		}
+		
+		//初始化线程池
+		executor = Executors.newCachedThreadPool();
+		
+		return true;
+		
+	}
+	
+	public void readConfigFile() throws Exception
+	{
+		config_map = new HashMap<String,String>();
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(config_file_name)));
+		String line = null;
+		String [] key_value;
+		while((line = br.readLine())!=null)
+		{
+			if(line.startsWith("#"))//跳过注释行
+				continue;
+			
+			key_value = line.split("=");
+			
+			if(key_value.length != 2)
+				continue;
+			
+			//key 全部转化为小写
+			config_map.put(key_value[0].toLowerCase(), key_value[1]);		
+		}
+		br.close();
+	}
+	
+	/**
+	 * 监听请求
+	 */
+	public void startListen() throws Exception
+	{
+		ServerSocket serverSocket = new ServerSocket(dispatch_server_port);
+		
+		while(true)
+		{
+			Socket clientSocket = serverSocket.accept();
+			//用线程处理每个请求
+			executor.execute(new DispatcherController(clientSocket));
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DispatcherServer dispatcherServer = new DispatcherServer();
+	}
+
+}

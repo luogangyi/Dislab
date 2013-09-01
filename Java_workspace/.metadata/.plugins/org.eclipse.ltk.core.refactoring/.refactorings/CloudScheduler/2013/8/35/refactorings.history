@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;model&apos; to &apos;Dispatcher/src&apos;&#x0A;- Original project: &apos;CloudScheduler&apos;&#x0A;- Destination element: &apos;Dispatcher/src&apos;&#x0A;- Original element: &apos;CloudScheduler/src/model&apos;" description="Copy package" destination="=Dispatcher/src" element1="/src&lt;model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1377484001563" version="1.0"/>
+</session>

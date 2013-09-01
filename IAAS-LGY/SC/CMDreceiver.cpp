@@ -82,57 +82,57 @@ void* CMDreceiver::infoProcess(int new_fd)
 {
 	int client_sockfd=new_fd;
     int msgLen = 0;
-			int recvLen = 0;
-			int iRet = 0;
-			char *buff=new char[256];
-			int iRecv = 0;
+	int recvLen = 0;
+	int iRet = 0;
+	char *buff=new char[256];
+	int iRecv = 0;
 
-			iRecv = recv(client_sockfd, &msgLen, sizeof(msgLen), 0);
+	iRecv = recv(client_sockfd, &msgLen, sizeof(msgLen), 0);
 
-			if( iRecv <= 0 )
-			{
-				cout<<"client close the connection."<<endl;
-				close(client_sockfd);
-				return NULL;
-			}
-			if( iRecv != sizeof(msgLen) )
-			{
+	if( iRecv <= 0 )
+	{
+		cout<<"client close the connection."<<endl;
+		close(client_sockfd);
+		return NULL;
+	}
+	if( iRecv != sizeof(msgLen) )
+	{
 
-				printf("in threadFunc,call recv to receive message size error1.");
+		printf("in threadFunc,call recv to receive message size error1.");
 
-				close(client_sockfd);
-				return NULL;
-			}
+		close(client_sockfd);
+		return NULL;
+	}
 
-			recvLen = 0;
-		//	cout<<msgLen<<endl;
-			memset(buff, 0, sizeof(buff));
-			while(recvLen<msgLen)
-			{
-				iRet = recv(client_sockfd, buff + recvLen, msgLen, 0);
-				if ( iRet > 0 )
-				{
-					recvLen += iRet;
-				//	cout<<"recelen "<<recvLen<<" data="<<buff<<endl;
-				}
-				else
-				{
+	recvLen = 0;
+//	cout<<msgLen<<endl;
+	memset(buff, 0, sizeof(buff));
+	while(recvLen<msgLen)
+	{
+		iRet = recv(client_sockfd, buff + recvLen, msgLen, 0);
+		if ( iRet > 0 )
+		{
+			recvLen += iRet;
+		//	cout<<"recelen "<<recvLen<<" data="<<buff<<endl;
+		}
+		else
+		{
 
-					cout<<"threadFunc call recv to receive message error2";
-					close(client_sockfd);
-					return NULL;
-				}
-			}
-			cout<<"received cmd:"<<buff<<endl;
-			 CMDType a;
-			String msg=a.processack(buff,a.processcmd(buff));
-			 cout<<"send ack:"<<msg.c_str()<<endl;
-		    	    int msglen;
-					msglen=strlen(msg.c_str());
-				//	cout<<msglen<<endl;
-					send(client_sockfd,&msglen,sizeof(msglen),0);
-					send(client_sockfd,msg.c_str(),msglen,0);
-                     close(client_sockfd);
+			cout<<"threadFunc call recv to receive message error2";
+			close(client_sockfd);
+			return NULL;
+		}
+	}
+	cout<<"received cmd:"<<buff<<endl;
+	CMDType a;
+	String msg=a.processack(buff,a.processcmd(buff));
+	//cout<<"send ack:"<<msg.c_str()<<endl;
+    int msglen;
+	msglen=strlen(msg.c_str());
+	//	cout<<msglen<<endl;
+	send(client_sockfd,&msglen,sizeof(msglen),0);
+	send(client_sockfd,msg.c_str(),msglen,0);
+    close(client_sockfd);
 
 
 }

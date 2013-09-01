@@ -1,0 +1,116 @@
+package lgy;
+
+import java.util.*;
+import java.sql.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.net.*;
+
+import common.Log;
+
+public class Dispatcher {
+
+	private String config_file_name = "clccfg.cfg";
+	private int dispatch_server_port;
+	private String db_address;
+	private String db_user_name;
+	private String db_user_pass;
+	private String db_name;
+	private Map<String,String> config_map;
+	private Log log;
+	
+	/**
+	 * 初始化，初始化失败，则返回false
+	 * @return
+	 */
+	public boolean init() throws Exception
+	{
+		log = new Log("clc_Dispatch_lgy.log");
+		//读配置文件
+		readConfigFile();
+		
+		if(!config_map.containsKey("DispatchServerPort".toLowerCase()))
+		{
+			System.out.println("Initiate Listen Port Failed!");
+			return false;
+		}
+		else
+		{	
+			dispatch_server_port = Integer.parseInt(config_map.get("DispatchServerPort".toLowerCase()));
+		}
+		
+		if(!config_map.containsKey("DBServerAddr".toLowerCase()))
+		{
+			System.out.println("Initiate Listen Port Failed!");
+			return false;
+		}
+		else
+		{	
+			db_address = config_map.get("DBServerAddr".toLowerCase());
+		}
+		
+		
+		if(!config_map.containsKey("DBUserName".toLowerCase()))
+		{
+			System.out.println("Initiate Listen Port Failed!");
+			return false;
+		}
+		else
+		{	
+			dispatch_server_port = Integer.parseInt(config_map.get("DBUserName".toLowerCase()));
+		}
+		
+		if(!config_map.containsKey("DBUserPass".toLowerCase()))
+		{
+			System.out.println("Initiate Listen Port Failed!");
+			return false;
+		}
+		else
+		{	
+			dispatch_server_port = Integer.parseInt(config_map.get("DBUserPass".toLowerCase()));
+		}
+		
+		
+		if(!config_map.containsKey("DBName".toLowerCase()))
+		{
+			System.out.println("Initiate Listen Port Failed!");
+			return false;
+		}
+		else
+		{	
+			dispatch_server_port = Integer.parseInt(config_map.get("DBName".toLowerCase()));
+		}
+		
+		return true;
+		
+	}
+	
+	public void readConfigFile() throws Exception
+	{
+		config_map = new HashMap<String,String>();
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(config_file_name)));
+		String line = null;
+		String [] key_value;
+		while((line = br.readLine())!=null)
+		{
+			if(line.startsWith("#"))//跳过注释行
+				continue;
+			
+			key_value = line.split("=");
+			
+			if(key_value.length != 2)
+				continue;
+			
+			//key 全部转化为小写
+			config_map.put(key_value[0].toLowerCase(), key_value[1]);		
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

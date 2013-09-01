@@ -1,0 +1,19 @@
+package lgy;
+
+import java.util.*;
+import java.sql.*;
+import common.*;
+
+/**
+ * 通过数据库中的NC数据构建整个数据中心的结构
+ * @author lgy
+ *
+ */
+public class DatacenterBulider {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

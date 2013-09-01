@@ -1,0 +1,49 @@
+package common;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DatabaseManager {
+
+	private static String config_file_name = "clccfg.cfg";
+
+	private static String db_address;
+	private static String db_user_name;
+	private static String db_user_pass;
+	private static String db_name;
+	
+	public static  boolean init()
+	{
+		
+	}
+	
+	public static Connection getMysqlConn()
+	{
+        // 驱动程序名
+        String driver = "com.mysql.jdbc.Driver";
+
+        // URL指向要访问的数据库名
+        String url = "jdbc:mysql://"+db_address+":3306/"+db_name;
+
+        try { 
+         // 加载驱动程序
+         Class.forName(driver);
+
+         // 连续数据库
+         Connection conn = DriverManager.getConnection(url, db_user_name, db_user_pass);
+         return conn;
+
+        }
+        catch(Exception e)
+        {
+        	e.printStackTrace();
+        	return null;
+        }
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

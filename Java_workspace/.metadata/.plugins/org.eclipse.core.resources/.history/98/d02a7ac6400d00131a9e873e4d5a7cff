@@ -1,0 +1,82 @@
+package architecture;
+import java.util.*;
+/**
+ * Each Rack represent a group of physical servers belongs to a rack.
+ * Each Rack belongs to a group(which has a unique group id)
+ * @author lgy
+ *
+ */
+public class Rack {
+	public static int counter=0;
+	public int rack_id=counter++;			/*unique id for each rack*/
+	public int group_id;
+	public int datacenter_id;
+	public int rack_traffic;
+	public int status;//0-关,1-开
+	public Map<Integer,Node> node_map=new HashMap<Integer,Node>();
+	
+	public RackGroup group;
+	public DataCenter datacenter;
+	/**
+	 * didn't designate server amount,
+	 * you shold add server manually.
+	 */
+	public Rack(int group_id, int datacenter_id)
+	{
+		this.group_id=group_id;
+		this.datacenter_id=datacenter_id;
+	}
+	/**
+	 * 
+	 * @param rack_id
+	 * @param group_id
+	 * @param datacenter_id
+	 * @param group
+	 * @param datacenter
+	 * @param status
+	 */
+	public Rack(int rack_id,int group_id, int datacenter_id,RackGroup group,DataCenter datacenter,int status)
+	{
+		this.rack_id = rack_id;
+		this.group_id  = group_id;
+		this.datacenter_id = datacenter_id;
+		this.group  = group;
+		this.datacenter = datacenter;
+		this.status = status;
+	}
+	
+	/**
+	 * initialize server_amount servers for this rack
+	 * @param server_amount
+	 * @param cpu_total
+	 * @param cpu_used
+	 * @param mem_total
+	 * @param mem_used
+	 * @param group_id
+	 * @param datacenter_id
+	 */
+//	public Rack(int server_amount,int cpu_total, int mem_total,
+//			 int group_id, int datacenter_id,RackGroup group,DataCenter datacenter)
+//	{
+//		this.group_id=group_id;
+//		this.datacenter_id=datacenter_id;
+//		
+//
+//		this.group = group;
+//		this.datacenter = datacenter;
+//		
+//		this.rack_id = counter++;
+//		Node temp;
+//		for(int i=0;i<server_amount;i++)
+//		{
+//			temp= new Node(cpu_total, mem_total,
+//					rack_id, group_id, datacenter_id,this,group,datacenter);
+//			node_list.add(temp);
+//		}
+//	}
+	
+	public void add_server(Node node)
+	{
+		node_list.add(node);
+	}
+}

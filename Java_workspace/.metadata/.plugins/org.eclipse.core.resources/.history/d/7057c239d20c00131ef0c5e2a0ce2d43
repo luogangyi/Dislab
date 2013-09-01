@@ -1,0 +1,66 @@
+package architecture;
+import java.util.*;
+/**
+ * Each Group represent a group of racks.
+ * Each Group belongs to a datacenter(which has a unique datacenter id)
+ * @author lgy
+ *
+ */
+public class RackGroup {
+	public static int counter=0;
+	public int group_id;			/*unique id for each group*/
+	public int datacenter_id;
+	public DataCenter datacenter;
+	public int group_traffic;
+	public List<Rack> rack_list=new LinkedList<Rack>();
+	
+	/**
+	 * 
+	 * @param datacenter_id
+	 */
+	public RackGroup(int datacenter_id)
+	{
+		this.datacenter_id=datacenter_id;
+	}
+	
+	public RackGroup(int datacenter_id ,int group_id)
+	{
+		this.datacenter_id=datacenter_id;
+		this.group_id = group_id;
+	}
+
+	
+	/**
+	 * 
+	 * @param rack_amount
+	 * @param server_amount
+	 * @param cpu_total
+	 * @param mem_total
+	 * @param datacenter_id
+	 */
+	public RackGroup(int rack_amount,int server_amount, int cpu_total, int mem_total,
+			  	int datacenter_id,DataCenter datacenter)
+	{
+		this.datacenter_id=datacenter_id;
+		this.datacenter = datacenter;
+		
+		this.group_id = counter++;
+		
+		Rack temp;
+		for(int i=0;i<rack_amount;i++)
+		{
+			temp= new Rack(server_amount, cpu_total, mem_total, group_id, datacenter_id,this,datacenter);
+			rack_list.add(temp);
+		}
+		System.out.println("rack amount: "+rack_list.size());
+	}	
+	
+	/**
+	 * 
+	 * @param info
+	 */
+	public RackGroup(String []info, int datacenter_id,DataCenter datacenter)
+	{
+		this(Integer.parseInt(info[1]), Integer.parseInt(info[2]), Integer.parseInt(info[4]), Integer.parseInt(info[5]), datacenter_id,datacenter);		
+	}
+}

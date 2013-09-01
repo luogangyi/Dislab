@@ -1,6 +1,7 @@
 #include "Auth.h"
 
-extern Log log;
+extern Log log;
+
 
 
 String Auth::dbServerIP;
@@ -53,7 +54,7 @@ void Auth::Do()
 	log.write("begin get permission data.", Log::INFO);
 	if( getPermissionData() == false)
 	{
-		ackCode =  "ACK:LOGIN:RETN=8,DESC=system internal error";
+		ackCode =  "ACK:LOGIN:RETN=8,DESC=system internal error,cannot get permissionData from database.";
 		return;
 	}
 	log.write("end get permission data.", Log::INFO);

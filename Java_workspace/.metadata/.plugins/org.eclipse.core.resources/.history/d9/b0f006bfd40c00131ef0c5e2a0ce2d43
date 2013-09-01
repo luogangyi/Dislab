@@ -1,0 +1,87 @@
+package lgy;
+
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.sql.*;
+
+import common.*;
+import architecture.*;
+/**
+ * 通过数据库中的NC数据构建整个数据中心的结构
+ * @author lgy
+ *
+ */
+public class DatacenterBulider {
+	
+	static void initiateDataCenter(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		//初始化机架组，并将其添加至数据中心中
+		initiateGroup(datacenter_id, datacenter);
+		//初始化机架，并将其添加至机架组中
+	}
+	
+	static void initiateGroup(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		
+		String sql="select * from RackGroup ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+
+            int group_id;
+            int group_status;
+            while(rs.next()) {
+    
+             // 选择sname这列数据
+            	group_id = rs.getInt("RackGroupID");
+            	group_status = rs.getInt("status");
+            	
+            	RackGroup g = new RackGroup(group_id,datacenter_id,datacenter,group_status);
+            	datacenter.addGroup(g);
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	static void initiateRack(int datacenter_id, DataCenter datacenter) throws Exception
+	{
+		
+		String sql="select * from Rack ";
+		
+		try{
+			Connection conn = DatabaseManager.getMysqlConn();
+            // statement用来执行SQL语句
+            Statement statement = conn.createStatement();
+            ResultSet rs = statement.executeQuery(sql);
+            String temp = null;
+            int group_id;
+            int group_status;
+            while(rs.next()) {
+    
+             // 选择sname这列数据
+            	group_id = rs.getInt("RackGroupID");
+            	group_status = rs.getInt("status");
+            	
+            	RackGroup g = new RackGroup(group_id,datacenter_id,datacenter,group_status);
+            	datacenter.addGroup(g);
+            }
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,555 @@
+2013/07/26 20:04:07 Friday [INFO] receive a connection from 192.168.100.11.
+2013/07/28 01:36:26 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/07/28 01:36:51 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/07/28 01:36:51 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/07/28 01:36:51 Sunday [INFO] begin call obj->Do.
+2013/07/28 01:36:51 Sunday [INFO] begin Auth::Do.
+2013/07/28 01:36:51 Sunday [INFO] begin process parameter.
+2013/07/28 01:36:51 Sunday [INFO] end process parameter.
+2013/07/28 01:36:51 Sunday [INFO] begin check user name and password.
+2013/07/28 01:36:51 Sunday [INFO] end check user name and password.
+2013/07/28 01:36:51 Sunday [INFO] call obj->Do down.
+2013/07/28 01:36:51 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 01:36:51 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/07/28 01:36:51 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:02:59 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/07/28 02:02:59 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/07/28 02:02:59 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:02:59 Sunday [INFO] begin Auth::Do.
+2013/07/28 02:02:59 Sunday [INFO] begin process parameter.
+2013/07/28 02:02:59 Sunday [INFO] end process parameter.
+2013/07/28 02:02:59 Sunday [INFO] begin check user name and password.
+2013/07/28 02:02:59 Sunday [INFO] end check user name and password.
+2013/07/28 02:02:59 Sunday [INFO] call obj->Do down.
+2013/07/28 02:02:59 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:02:59 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/07/28 02:02:59 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:16:56 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/07/28 02:16:56 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/07/28 02:16:56 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:16:56 Sunday [INFO] begin Auth::Do.
+2013/07/28 02:16:56 Sunday [INFO] begin process parameter.
+2013/07/28 02:16:56 Sunday [INFO] end process parameter.
+2013/07/28 02:16:56 Sunday [INFO] begin check user name and password.
+2013/07/28 02:16:56 Sunday [INFO] end check user name and password.
+2013/07/28 02:16:56 Sunday [INFO] call obj->Do down.
+2013/07/28 02:16:56 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:16:56 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/07/28 02:16:56 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:29:07 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/07/28 02:29:07 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/07/28 02:29:07 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:29:07 Sunday [INFO] begin Auth::Do.
+2013/07/28 02:29:07 Sunday [INFO] begin process parameter.
+2013/07/28 02:29:07 Sunday [INFO] end process parameter.
+2013/07/28 02:29:07 Sunday [INFO] begin check user name and password.
+2013/07/28 02:29:07 Sunday [INFO] end check user name and password.
+2013/07/28 02:29:07 Sunday [INFO] call obj->Do down.
+2013/07/28 02:29:07 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:29:07 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/07/28 02:29:07 Sunday [INFO] call obj->sendAck down.
+2013/07/28 02:31:02 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/07/28 02:31:02 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/07/28 02:31:02 Sunday [INFO] begin call obj->Do.
+2013/07/28 02:31:02 Sunday [INFO] begin Auth::Do.
+2013/07/28 02:31:02 Sunday [INFO] begin process parameter.
+2013/07/28 02:31:02 Sunday [INFO] end process parameter.
+2013/07/28 02:31:02 Sunday [INFO] begin check user name and password.
+2013/07/28 02:31:02 Sunday [INFO] end check user name and password.
+2013/07/28 02:31:02 Sunday [INFO] call obj->Do down.
+2013/07/28 02:31:02 Sunday [INFO] begin call obj->sendAck.
+2013/07/28 02:31:02 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/07/28 02:31:02 Sunday [INFO] call obj->sendAck down.
+2013/08/21 16:23:03 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 16:24:26 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 16:24:33 Wednesday [INFO] clinet close the connection.
+2013/08/21 16:25:44 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 16:35:23 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 16:35:23 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 16:35:23 Wednesday [INFO] begin call obj->Do.
+2013/08/21 16:35:23 Wednesday [INFO] begin Auth::Do.
+2013/08/21 16:35:23 Wednesday [INFO] begin process parameter.
+2013/08/21 16:35:23 Wednesday [INFO] end process parameter.
+2013/08/21 16:35:23 Wednesday [INFO] begin check user name and password.
+2013/08/21 16:35:23 Wednesday [INFO] end check user name and password.
+2013/08/21 16:35:23 Wednesday [INFO] call obj->Do down.
+2013/08/21 16:35:23 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 16:35:23 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 16:35:23 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 16:47:14 Wednesday [INFO] clinet close the connection.
+2013/08/21 16:47:57 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 16:48:04 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 16:48:04 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 16:48:04 Wednesday [INFO] begin call obj->Do.
+2013/08/21 16:48:04 Wednesday [INFO] begin Auth::Do.
+2013/08/21 16:48:04 Wednesday [INFO] begin process parameter.
+2013/08/21 16:48:04 Wednesday [INFO] end process parameter.
+2013/08/21 16:48:04 Wednesday [INFO] begin check user name and password.
+2013/08/21 16:48:04 Wednesday [INFO] end check user name and password.
+2013/08/21 16:48:04 Wednesday [INFO] call obj->Do down.
+2013/08/21 16:48:04 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 16:48:04 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 16:48:04 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 16:48:27 Wednesday [INFO] clinet close the connection.
+2013/08/21 16:54:33 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 16:54:37 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 16:54:37 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 16:54:37 Wednesday [INFO] begin call obj->Do.
+2013/08/21 16:54:37 Wednesday [INFO] begin Auth::Do.
+2013/08/21 16:54:37 Wednesday [INFO] begin process parameter.
+2013/08/21 16:54:37 Wednesday [INFO] end process parameter.
+2013/08/21 16:54:37 Wednesday [INFO] begin check user name and password.
+2013/08/21 16:54:37 Wednesday [INFO] end check user name and password.
+2013/08/21 16:54:37 Wednesday [INFO] call obj->Do down.
+2013/08/21 16:54:37 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 16:54:37 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 16:54:37 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 16:55:06 Wednesday [INFO] clinet close the connection.
+2013/08/21 16:56:00 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 16:56:04 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 16:56:04 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 16:56:04 Wednesday [INFO] begin call obj->Do.
+2013/08/21 16:56:04 Wednesday [INFO] begin Auth::Do.
+2013/08/21 16:56:04 Wednesday [INFO] begin process parameter.
+2013/08/21 16:56:04 Wednesday [INFO] end process parameter.
+2013/08/21 16:56:04 Wednesday [INFO] begin check user name and password.
+2013/08/21 16:56:04 Wednesday [INFO] end check user name and password.
+2013/08/21 16:56:04 Wednesday [INFO] call obj->Do down.
+2013/08/21 16:56:04 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 16:56:04 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 16:56:04 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 16:56:57 Wednesday [INFO] clinet close the connection.
+2013/08/21 16:57:22 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 16:57:29 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 16:57:29 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 16:57:29 Wednesday [INFO] begin call obj->Do.
+2013/08/21 16:57:29 Wednesday [INFO] begin Auth::Do.
+2013/08/21 16:57:29 Wednesday [INFO] begin process parameter.
+2013/08/21 16:57:29 Wednesday [INFO] end process parameter.
+2013/08/21 16:57:29 Wednesday [INFO] begin check user name and password.
+2013/08/21 16:57:29 Wednesday [INFO] end check user name and password.
+2013/08/21 16:57:29 Wednesday [INFO] call obj->Do down.
+2013/08/21 16:57:29 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 16:57:29 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 16:57:29 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 17:58:17 Wednesday [INFO] clinet close the connection.
+2013/08/21 17:58:34 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 17:58:38 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 17:58:38 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 17:58:38 Wednesday [INFO] begin call obj->Do.
+2013/08/21 17:58:38 Wednesday [INFO] begin Auth::Do.
+2013/08/21 17:58:38 Wednesday [INFO] begin process parameter.
+2013/08/21 17:58:38 Wednesday [INFO] end process parameter.
+2013/08/21 17:58:38 Wednesday [INFO] begin check user name and password.
+2013/08/21 17:58:38 Wednesday [INFO] end check user name and password.
+2013/08/21 17:58:38 Wednesday [INFO] call obj->Do down.
+2013/08/21 17:58:38 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 17:58:38 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 17:58:38 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 18:11:45 Wednesday [INFO] clinet close the connection.
+2013/08/21 18:11:53 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 18:12:05 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 18:12:05 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 18:12:05 Wednesday [INFO] begin call obj->Do.
+2013/08/21 18:12:05 Wednesday [INFO] begin Auth::Do.
+2013/08/21 18:12:05 Wednesday [INFO] begin process parameter.
+2013/08/21 18:12:05 Wednesday [INFO] end process parameter.
+2013/08/21 18:12:05 Wednesday [INFO] begin check user name and password.
+2013/08/21 18:12:05 Wednesday [INFO] end check user name and password.
+2013/08/21 18:12:05 Wednesday [INFO] call obj->Do down.
+2013/08/21 18:12:05 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 18:12:05 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 18:12:05 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 18:16:44 Wednesday [INFO] clinet close the connection.
+2013/08/21 18:17:31 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 18:17:36 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 18:17:36 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 18:17:36 Wednesday [INFO] begin call obj->Do.
+2013/08/21 18:17:36 Wednesday [INFO] begin Auth::Do.
+2013/08/21 18:17:36 Wednesday [INFO] begin process parameter.
+2013/08/21 18:17:36 Wednesday [INFO] end process parameter.
+2013/08/21 18:17:36 Wednesday [INFO] begin check user name and password.
+2013/08/21 18:17:36 Wednesday [INFO] end check user name and password.
+2013/08/21 18:17:36 Wednesday [INFO] call obj->Do down.
+2013/08/21 18:17:36 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 18:17:36 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 18:17:36 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 18:22:03 Wednesday [INFO] clinet close the connection.
+2013/08/21 18:22:32 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 18:24:08 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 18:24:08 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 18:24:08 Wednesday [INFO] begin call obj->Do.
+2013/08/21 18:24:08 Wednesday [INFO] begin Auth::Do.
+2013/08/21 18:24:08 Wednesday [INFO] begin process parameter.
+2013/08/21 18:24:08 Wednesday [INFO] end process parameter.
+2013/08/21 18:24:08 Wednesday [INFO] begin check user name and password.
+2013/08/21 18:24:08 Wednesday [INFO] end check user name and password.
+2013/08/21 18:24:08 Wednesday [INFO] call obj->Do down.
+2013/08/21 18:24:08 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 18:24:08 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 18:24:08 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 19:06:33 Wednesday [INFO] clinet close the connection.
+2013/08/21 19:07:06 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 19:07:10 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 19:07:10 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 19:07:10 Wednesday [INFO] begin call obj->Do.
+2013/08/21 19:07:10 Wednesday [INFO] begin Auth::Do.
+2013/08/21 19:07:10 Wednesday [INFO] begin process parameter.
+2013/08/21 19:07:10 Wednesday [INFO] end process parameter.
+2013/08/21 19:07:10 Wednesday [INFO] begin check user name and password.
+2013/08/21 19:07:10 Wednesday [INFO] end check user name and password.
+2013/08/21 19:07:10 Wednesday [INFO] call obj->Do down.
+2013/08/21 19:07:10 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 19:07:10 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 19:07:10 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 19:39:29 Wednesday [INFO] clinet close the connection.
+2013/08/21 19:40:39 Wednesday [INFO] receive a connection from 192.168.100.11.
+2013/08/21 19:40:44 Wednesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/21 19:40:44 Wednesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/21 19:40:44 Wednesday [INFO] begin call obj->Do.
+2013/08/21 19:40:44 Wednesday [INFO] begin Auth::Do.
+2013/08/21 19:40:44 Wednesday [INFO] begin process parameter.
+2013/08/21 19:40:44 Wednesday [INFO] end process parameter.
+2013/08/21 19:40:44 Wednesday [INFO] begin check user name and password.
+2013/08/21 19:40:44 Wednesday [INFO] end check user name and password.
+2013/08/21 19:40:44 Wednesday [INFO] call obj->Do down.
+2013/08/21 19:40:44 Wednesday [INFO] begin call obj->sendAck.
+2013/08/21 19:40:44 Wednesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/21 19:40:44 Wednesday [INFO] call obj->sendAck down.
+2013/08/21 19:47:17 Wednesday [INFO] clinet close the connection.
+2013/08/27 19:20:53 Tuesday [INFO] receive a connection from 192.168.100.11.
+2013/08/27 19:26:32 Tuesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/27 19:26:32 Tuesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/27 19:26:32 Tuesday [INFO] begin call obj->Do.
+2013/08/27 19:26:32 Tuesday [INFO] begin Auth::Do.
+2013/08/27 19:26:32 Tuesday [INFO] begin process parameter.
+2013/08/27 19:26:32 Tuesday [INFO] end process parameter.
+2013/08/27 19:26:32 Tuesday [INFO] begin check user name and password.
+2013/08/27 19:26:32 Tuesday [INFO] end check user name and password.
+2013/08/27 19:26:32 Tuesday [INFO] call obj->Do down.
+2013/08/27 19:26:32 Tuesday [INFO] begin call obj->sendAck.
+2013/08/27 19:26:32 Tuesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/27 19:26:32 Tuesday [INFO] call obj->sendAck down.
+2013/08/27 19:31:38 Tuesday [INFO] clinet close the connection.
+2013/08/27 19:35:21 Tuesday [INFO] receive a connection from 192.168.100.11.
+2013/08/27 19:38:24 Tuesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/27 19:38:24 Tuesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/27 19:38:24 Tuesday [INFO] begin call obj->Do.
+2013/08/27 19:38:24 Tuesday [INFO] begin Auth::Do.
+2013/08/27 19:38:24 Tuesday [INFO] begin process parameter.
+2013/08/27 19:38:24 Tuesday [INFO] end process parameter.
+2013/08/27 19:38:24 Tuesday [INFO] begin check user name and password.
+2013/08/27 19:38:25 Tuesday [INFO] end check user name and password.
+2013/08/27 19:38:25 Tuesday [INFO] call obj->Do down.
+2013/08/27 19:38:25 Tuesday [INFO] begin call obj->sendAck.
+2013/08/27 19:38:25 Tuesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/27 19:38:25 Tuesday [INFO] call obj->sendAck down.
+2013/08/27 19:48:11 Tuesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/27 19:48:11 Tuesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/27 19:48:11 Tuesday [INFO] begin call obj->Do.
+2013/08/27 19:48:11 Tuesday [INFO] begin Auth::Do.
+2013/08/27 19:48:11 Tuesday [INFO] begin process parameter.
+2013/08/27 19:48:11 Tuesday [INFO] end process parameter.
+2013/08/27 19:48:11 Tuesday [INFO] begin check user name and password.
+2013/08/27 19:48:11 Tuesday [INFO] end check user name and password.
+2013/08/27 19:48:11 Tuesday [INFO] call obj->Do down.
+2013/08/27 19:48:11 Tuesday [INFO] begin call obj->sendAck.
+2013/08/27 19:48:11 Tuesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/27 19:48:11 Tuesday [INFO] call obj->sendAck down.
+2013/08/27 20:14:38 Tuesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/27 20:14:38 Tuesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/27 20:14:38 Tuesday [INFO] begin call obj->Do.
+2013/08/27 20:14:38 Tuesday [INFO] begin Auth::Do.
+2013/08/27 20:14:38 Tuesday [INFO] begin process parameter.
+2013/08/27 20:14:38 Tuesday [INFO] end process parameter.
+2013/08/27 20:14:38 Tuesday [INFO] begin check user name and password.
+2013/08/27 20:14:38 Tuesday [INFO] end check user name and password.
+2013/08/27 20:14:38 Tuesday [INFO] call obj->Do down.
+2013/08/27 20:14:38 Tuesday [INFO] begin call obj->sendAck.
+2013/08/27 20:14:38 Tuesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/27 20:14:38 Tuesday [INFO] call obj->sendAck down.
+2013/08/27 20:24:07 Tuesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/27 20:24:07 Tuesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/27 20:24:07 Tuesday [INFO] begin call obj->Do.
+2013/08/27 20:24:07 Tuesday [INFO] begin Auth::Do.
+2013/08/27 20:24:07 Tuesday [INFO] begin process parameter.
+2013/08/27 20:24:07 Tuesday [INFO] end process parameter.
+2013/08/27 20:24:07 Tuesday [INFO] begin check user name and password.
+2013/08/27 20:24:07 Tuesday [INFO] end check user name and password.
+2013/08/27 20:24:07 Tuesday [INFO] call obj->Do down.
+2013/08/27 20:24:07 Tuesday [INFO] begin call obj->sendAck.
+2013/08/27 20:24:07 Tuesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/27 20:24:07 Tuesday [INFO] call obj->sendAck down.
+2013/08/27 20:27:26 Tuesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/27 20:27:26 Tuesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/27 20:27:26 Tuesday [INFO] begin call obj->Do.
+2013/08/27 20:27:26 Tuesday [INFO] begin Auth::Do.
+2013/08/27 20:27:26 Tuesday [INFO] begin process parameter.
+2013/08/27 20:27:26 Tuesday [INFO] end process parameter.
+2013/08/27 20:27:26 Tuesday [INFO] begin check user name and password.
+2013/08/27 20:27:26 Tuesday [INFO] end check user name and password.
+2013/08/27 20:27:26 Tuesday [INFO] call obj->Do down.
+2013/08/27 20:27:26 Tuesday [INFO] begin call obj->sendAck.
+2013/08/27 20:27:26 Tuesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/27 20:27:26 Tuesday [INFO] call obj->sendAck down.
+2013/08/27 20:29:37 Tuesday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/08/27 20:29:37 Tuesday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/08/27 20:29:37 Tuesday [INFO] begin call obj->Do.
+2013/08/27 20:29:37 Tuesday [INFO] begin Auth::Do.
+2013/08/27 20:29:37 Tuesday [INFO] begin process parameter.
+2013/08/27 20:29:37 Tuesday [INFO] end process parameter.
+2013/08/27 20:29:37 Tuesday [INFO] begin check user name and password.
+2013/08/27 20:29:37 Tuesday [INFO] end check user name and password.
+2013/08/27 20:29:37 Tuesday [INFO] call obj->Do down.
+2013/08/27 20:29:37 Tuesday [INFO] begin call obj->sendAck.
+2013/08/27 20:29:37 Tuesday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/08/27 20:29:37 Tuesday [INFO] call obj->sendAck down.
+2013/09/01 15:00:21 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:00:21 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:00:21 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:00:21 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:00:21 Sunday [INFO] begin process parameter.
+2013/09/01 15:00:21 Sunday [INFO] end process parameter.
+2013/09/01 15:00:21 Sunday [INFO] begin check user name and password.
+2013/09/01 15:00:21 Sunday [INFO] end check user name and password.
+2013/09/01 15:00:21 Sunday [INFO] call obj->Do down.
+2013/09/01 15:00:21 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:00:21 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:00:21 Sunday [INFO] call obj->sendAck down.
+2013/09/01 15:01:20 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:01:20 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:01:20 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:01:20 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:01:21 Sunday [INFO] begin process parameter.
+2013/09/01 15:01:21 Sunday [INFO] end process parameter.
+2013/09/01 15:01:21 Sunday [INFO] begin check user name and password.
+2013/09/01 15:01:21 Sunday [INFO] end check user name and password.
+2013/09/01 15:01:21 Sunday [INFO] call obj->Do down.
+2013/09/01 15:01:21 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:01:21 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:01:21 Sunday [INFO] call obj->sendAck down.
+2013/09/01 15:02:56 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:02:56 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:02:56 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:02:56 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:02:56 Sunday [INFO] begin process parameter.
+2013/09/01 15:02:56 Sunday [INFO] end process parameter.
+2013/09/01 15:02:56 Sunday [INFO] begin check user name and password.
+2013/09/01 15:02:56 Sunday [INFO] end check user name and password.
+2013/09/01 15:02:56 Sunday [INFO] call obj->Do down.
+2013/09/01 15:02:56 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:02:56 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:02:56 Sunday [INFO] call obj->sendAck down.
+2013/09/01 15:25:07 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:25:07 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:25:07 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:25:07 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:25:07 Sunday [INFO] begin process parameter.
+2013/09/01 15:25:07 Sunday [INFO] end process parameter.
+2013/09/01 15:25:07 Sunday [INFO] begin check user name and password.
+2013/09/01 15:25:07 Sunday [INFO] end check user name and password.
+2013/09/01 15:25:07 Sunday [INFO] call obj->Do down.
+2013/09/01 15:25:07 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:25:07 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:25:07 Sunday [INFO] call obj->sendAck down.
+2013/09/01 15:35:24 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:35:24 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:35:24 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:35:24 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:35:24 Sunday [INFO] begin process parameter.
+2013/09/01 15:35:24 Sunday [INFO] end process parameter.
+2013/09/01 15:35:24 Sunday [INFO] begin check user name and password.
+2013/09/01 15:35:24 Sunday [INFO] end check user name and password.
+2013/09/01 15:35:24 Sunday [INFO] call obj->Do down.
+2013/09/01 15:35:24 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:35:24 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:35:24 Sunday [INFO] call obj->sendAck down.
+2013/09/01 15:42:31 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:42:31 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:42:31 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:42:31 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:42:31 Sunday [INFO] begin process parameter.
+2013/09/01 15:42:31 Sunday [INFO] end process parameter.
+2013/09/01 15:42:31 Sunday [INFO] begin check user name and password.
+2013/09/01 15:42:31 Sunday [INFO] end check user name and password.
+2013/09/01 15:42:31 Sunday [INFO] call obj->Do down.
+2013/09/01 15:42:31 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:42:31 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:42:31 Sunday [INFO] call obj->sendAck down.
+2013/09/01 15:48:29 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:48:29 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:48:29 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:48:29 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:48:29 Sunday [INFO] begin process parameter.
+2013/09/01 15:48:29 Sunday [INFO] end process parameter.
+2013/09/01 15:48:29 Sunday [INFO] begin check user name and password.
+2013/09/01 15:48:29 Sunday [INFO] end check user name and password.
+2013/09/01 15:48:29 Sunday [INFO] call obj->Do down.
+2013/09/01 15:48:29 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:48:29 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:48:29 Sunday [INFO] call obj->sendAck down.
+2013/09/01 15:57:27 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 15:57:27 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 15:57:27 Sunday [INFO] begin call obj->Do.
+2013/09/01 15:57:27 Sunday [INFO] begin Auth::Do.
+2013/09/01 15:57:27 Sunday [INFO] begin process parameter.
+2013/09/01 15:57:27 Sunday [INFO] end process parameter.
+2013/09/01 15:57:27 Sunday [INFO] begin check user name and password.
+2013/09/01 15:57:27 Sunday [INFO] end check user name and password.
+2013/09/01 15:57:27 Sunday [INFO] call obj->Do down.
+2013/09/01 15:57:27 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 15:57:27 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 15:57:27 Sunday [INFO] call obj->sendAck down.
+2013/09/01 16:01:37 Sunday [INFO] clinet close the connection.
+2013/09/01 16:03:43 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/09/01 16:03:58 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 16:03:58 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 16:03:58 Sunday [INFO] begin call obj->Do.
+2013/09/01 16:03:58 Sunday [INFO] begin Auth::Do.
+2013/09/01 16:03:58 Sunday [INFO] begin process parameter.
+2013/09/01 16:03:58 Sunday [INFO] end process parameter.
+2013/09/01 16:03:58 Sunday [INFO] begin check user name and password.
+2013/09/01 16:03:58 Sunday [INFO] end check user name and password.
+2013/09/01 16:03:58 Sunday [INFO] call obj->Do down.
+2013/09/01 16:03:58 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 16:03:58 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 16:03:58 Sunday [INFO] call obj->sendAck down.
+2013/09/01 16:39:34 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 16:39:34 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 16:39:34 Sunday [INFO] begin call obj->Do.
+2013/09/01 16:39:34 Sunday [INFO] begin Auth::Do.
+2013/09/01 16:39:34 Sunday [INFO] begin process parameter.
+2013/09/01 16:39:34 Sunday [INFO] end process parameter.
+2013/09/01 16:39:34 Sunday [INFO] begin check user name and password.
+2013/09/01 16:39:34 Sunday [INFO] end check user name and password.
+2013/09/01 16:39:34 Sunday [INFO] call obj->Do down.
+2013/09/01 16:39:34 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 16:39:34 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 16:39:34 Sunday [INFO] call obj->sendAck down.
+2013/09/01 16:44:13 Sunday [INFO] clinet close the connection.
+2013/09/01 16:44:29 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/09/01 16:44:40 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 16:44:40 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 16:44:40 Sunday [INFO] begin call obj->Do.
+2013/09/01 16:44:40 Sunday [INFO] begin Auth::Do.
+2013/09/01 16:44:40 Sunday [INFO] begin process parameter.
+2013/09/01 16:44:40 Sunday [INFO] end process parameter.
+2013/09/01 16:44:40 Sunday [INFO] begin check user name and password.
+2013/09/01 16:44:40 Sunday [INFO] end check user name and password.
+2013/09/01 16:44:40 Sunday [INFO] call obj->Do down.
+2013/09/01 16:44:40 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 16:44:40 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 16:44:40 Sunday [INFO] call obj->sendAck down.
+2013/09/01 16:50:52 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 16:50:52 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 16:50:52 Sunday [INFO] begin call obj->Do.
+2013/09/01 16:50:52 Sunday [INFO] begin Auth::Do.
+2013/09/01 16:50:52 Sunday [INFO] begin process parameter.
+2013/09/01 16:50:52 Sunday [INFO] end process parameter.
+2013/09/01 16:50:52 Sunday [INFO] begin check user name and password.
+2013/09/01 16:50:52 Sunday [INFO] end check user name and password.
+2013/09/01 16:50:52 Sunday [INFO] call obj->Do down.
+2013/09/01 16:50:52 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 16:50:52 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 16:50:52 Sunday [INFO] call obj->sendAck down.
+2013/09/01 16:52:04 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 16:52:04 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 16:52:04 Sunday [INFO] begin call obj->Do.
+2013/09/01 16:52:04 Sunday [INFO] begin Auth::Do.
+2013/09/01 16:52:04 Sunday [INFO] begin process parameter.
+2013/09/01 16:52:04 Sunday [INFO] end process parameter.
+2013/09/01 16:52:04 Sunday [INFO] begin check user name and password.
+2013/09/01 16:52:04 Sunday [INFO] end check user name and password.
+2013/09/01 16:52:04 Sunday [INFO] call obj->Do down.
+2013/09/01 16:52:04 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 16:52:04 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 16:52:04 Sunday [INFO] call obj->sendAck down.
+2013/09/01 16:53:04 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 16:53:04 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 16:53:04 Sunday [INFO] begin call obj->Do.
+2013/09/01 16:53:04 Sunday [INFO] begin Auth::Do.
+2013/09/01 16:53:04 Sunday [INFO] begin process parameter.
+2013/09/01 16:53:04 Sunday [INFO] end process parameter.
+2013/09/01 16:53:04 Sunday [INFO] begin check user name and password.
+2013/09/01 16:53:04 Sunday [INFO] end check user name and password.
+2013/09/01 16:53:04 Sunday [INFO] call obj->Do down.
+2013/09/01 16:53:04 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 16:53:04 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 16:53:04 Sunday [INFO] call obj->sendAck down.
+2013/09/01 19:11:00 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 19:11:00 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 19:11:00 Sunday [INFO] begin call obj->Do.
+2013/09/01 19:11:00 Sunday [INFO] begin Auth::Do.
+2013/09/01 19:11:00 Sunday [INFO] begin process parameter.
+2013/09/01 19:11:00 Sunday [INFO] end process parameter.
+2013/09/01 19:11:00 Sunday [INFO] begin check user name and password.
+2013/09/01 19:11:01 Sunday [INFO] end check user name and password.
+2013/09/01 19:11:01 Sunday [INFO] call obj->Do down.
+2013/09/01 19:11:01 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 19:11:01 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 19:11:01 Sunday [INFO] call obj->sendAck down.
+2013/09/01 19:15:44 Sunday [INFO] clinet close the connection.
+2013/09/01 19:15:55 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/09/01 19:16:04 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 19:16:04 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 19:16:04 Sunday [INFO] begin call obj->Do.
+2013/09/01 19:16:04 Sunday [INFO] begin Auth::Do.
+2013/09/01 19:16:04 Sunday [INFO] begin process parameter.
+2013/09/01 19:16:04 Sunday [INFO] end process parameter.
+2013/09/01 19:16:04 Sunday [INFO] begin check user name and password.
+2013/09/01 19:16:04 Sunday [INFO] end check user name and password.
+2013/09/01 19:16:04 Sunday [INFO] call obj->Do down.
+2013/09/01 19:16:04 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 19:16:04 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 19:16:04 Sunday [INFO] call obj->sendAck down.
+2013/09/01 19:18:25 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 19:18:25 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 19:18:25 Sunday [INFO] begin call obj->Do.
+2013/09/01 19:18:25 Sunday [INFO] begin Auth::Do.
+2013/09/01 19:18:25 Sunday [INFO] begin process parameter.
+2013/09/01 19:18:25 Sunday [INFO] end process parameter.
+2013/09/01 19:18:25 Sunday [INFO] begin check user name and password.
+2013/09/01 19:18:25 Sunday [INFO] end check user name and password.
+2013/09/01 19:18:25 Sunday [INFO] call obj->Do down.
+2013/09/01 19:18:25 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 19:18:25 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 19:18:25 Sunday [INFO] call obj->sendAck down.
+2013/09/01 19:21:48 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 19:21:48 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 19:21:48 Sunday [INFO] begin call obj->Do.
+2013/09/01 19:21:48 Sunday [INFO] begin Auth::Do.
+2013/09/01 19:21:48 Sunday [INFO] begin process parameter.
+2013/09/01 19:21:48 Sunday [INFO] end process parameter.
+2013/09/01 19:21:48 Sunday [INFO] begin check user name and password.
+2013/09/01 19:21:48 Sunday [INFO] end check user name and password.
+2013/09/01 19:21:48 Sunday [INFO] call obj->Do down.
+2013/09/01 19:21:48 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 19:21:48 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 19:21:48 Sunday [INFO] call obj->sendAck down.
+2013/09/01 19:28:44 Sunday [INFO] clinet close the connection.
+2013/09/01 19:29:00 Sunday [INFO] receive a connection from 192.168.100.11.
+2013/09/01 19:29:31 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 19:29:31 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 19:29:31 Sunday [INFO] begin call obj->Do.
+2013/09/01 19:29:31 Sunday [INFO] begin Auth::Do.
+2013/09/01 19:29:31 Sunday [INFO] begin process parameter.
+2013/09/01 19:29:31 Sunday [INFO] end process parameter.
+2013/09/01 19:29:31 Sunday [INFO] begin check user name and password.
+2013/09/01 19:29:31 Sunday [INFO] end check user name and password.
+2013/09/01 19:29:31 Sunday [INFO] call obj->Do down.
+2013/09/01 19:29:31 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 19:29:31 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 19:29:31 Sunday [INFO] call obj->sendAck down.
+2013/09/01 19:30:21 Sunday [INFO] receive cmd login:user=test1,passwd=123456 and return a Auth object.
+2013/09/01 19:30:21 Sunday [INFO] use para user=test1,passwd=123456 to init the Auth object.
+2013/09/01 19:30:21 Sunday [INFO] begin call obj->Do.
+2013/09/01 19:30:21 Sunday [INFO] begin Auth::Do.
+2013/09/01 19:30:21 Sunday [INFO] begin process parameter.
+2013/09/01 19:30:21 Sunday [INFO] end process parameter.
+2013/09/01 19:30:21 Sunday [INFO] begin check user name and password.
+2013/09/01 19:30:21 Sunday [INFO] end check user name and password.
+2013/09/01 19:30:21 Sunday [INFO] call obj->Do down.
+2013/09/01 19:30:21 Sunday [INFO] begin call obj->sendAck.
+2013/09/01 19:30:21 Sunday [INFO] send ack message:ACK:LOGIN:RETN=0,DESC=success,RESULT=-1|-1
+2013/09/01 19:30:21 Sunday [INFO] call obj->sendAck down.
+2013/09/01 19:34:48 Sunday [INFO] clinet close the connection.

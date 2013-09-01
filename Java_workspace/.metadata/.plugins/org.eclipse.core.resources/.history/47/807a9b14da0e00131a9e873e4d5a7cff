@@ -1,0 +1,18 @@
+package lgy;
+
+import java.util.*;
+import model.*;
+import architecture.*;
+
+public class FirstFit {
+
+	String findBestNC(List <VMDetail> vm_list)
+	{
+		return "";
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

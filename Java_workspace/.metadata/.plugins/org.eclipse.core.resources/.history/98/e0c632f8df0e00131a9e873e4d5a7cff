@@ -1,0 +1,19 @@
+package lgy;
+
+import java.util.*;
+import model.*;
+import architecture.*;
+
+public class FirstFit {
+
+	String findBestNC(VMDetail vmd)
+	{
+		DatacenterBuilder.updateNC();
+		return "";
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
